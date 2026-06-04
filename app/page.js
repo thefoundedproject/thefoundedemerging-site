@@ -267,6 +267,47 @@ export default function Home() {
         </div>
       </section>
 
+      {/* THE ARC — visual journey through 6 months */}
+      <section style={{ backgroundColor: '#F5F0E8', padding: '80px 24px' }}>
+        <div style={{ maxWidth: 1000, margin: '0 auto' }}>
+          <Reveal>
+            <p style={{ color: '#D8AB69', fontSize: 10, fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: 16, textAlign: 'center' }}>The Six-Month Arc</p>
+            <p style={{ color: 'rgba(15,27,31,0.5)', fontSize: 15, textAlign: 'center', marginBottom: 48 }}>Each module builds on the one before it. By the end, you have a structure — not just a mindset.</p>
+          </Reveal>
+          <Reveal delay={100}>
+            <div style={{ position: 'relative', paddingBottom: 20 }}>
+              {/* Progress line */}
+              <div style={{ position: 'absolute', top: 28, left: '8%', right: '8%', height: 2, backgroundColor: 'rgba(15,27,31,0.1)' }} />
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(6, 1fr)', gap: 8 }}>
+                {[
+                  { num: '01', label: 'Mission', color: '#D8AB69' },
+                  { num: '02', label: 'Capitals', color: '#C49A5A' },
+                  { num: '03', label: 'Board', color: '#B48A4A' },
+                  { num: '04', label: 'Patterns', color: '#A47A3A' },
+                  { num: '05', label: 'Digital Self', color: '#946A2A' },
+                  { num: '06', label: 'Community', color: '#0F1B1F' },
+                ].map((step, i) => (
+                  <div key={step.num} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12 }}>
+                    <div style={{ width: 56, height: 56, borderRadius: '50%', backgroundColor: step.color, display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative', zIndex: 1, boxShadow: '0 2px 12px rgba(15,27,31,0.15)' }}>
+                      <span style={{ color: 'white', fontSize: 13, fontWeight: 700 }}>{step.num}</span>
+                    </div>
+                    <span style={{ color: 'rgba(15,27,31,0.6)', fontSize: 11, fontWeight: 600, textAlign: 'center', lineHeight: 1.3 }}>{step.label}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </Reveal>
+          <Reveal delay={300}>
+            <div style={{ backgroundColor: '#0F1B1F', borderRadius: 10, padding: '28px 36px', marginTop: 48, display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 20 }}>
+              <p style={{ color: '#F5F0E8', fontSize: 16, fontWeight: 300, lineHeight: 1.5 }}>
+                Six months from now, you'll have a life with structure, not just intention.
+              </p>
+              <a href="/apply" style={{ backgroundColor: '#D8AB69', color: '#0F1B1F', padding: '12px 28px', borderRadius: 6, fontWeight: 700, fontSize: 13, textDecoration: 'none', whiteSpace: 'nowrap' }}>Apply now →</a>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
       {/* QUIZ */}
       <section style={{ backgroundColor: '#2A5A66', padding: '100px 24px' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 64, alignItems: 'start' }}>
