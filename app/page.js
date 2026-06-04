@@ -28,27 +28,27 @@ const QUIZ = [
     q: 'Right now, what is most true?',
     options: [
       { label: 'I know what I want. I just do not know how to organize around it.', value: 'goals' },
-      { label: 'I am making decisions that matter and I am making them mostly alone.', value: 'isolated' },
+      { label: 'I'm making decisions that matter and I'm making them mostly alone.', value: 'isolated' },
       { label: 'I spend a lot of energy being who people expect me to be.', value: 'performing' },
-      { label: 'I am carrying something heavy that most people around me cannot see.', value: 'carrying' },
+      { label: 'I'm carrying something heavy that most people around me can't see.', value: 'carrying' },
     ],
   },
   {
-    q: 'When something big happens — a decision, a conflict, a choice about your future — who do you go to?',
+    q: 'When something big comes up, a decision, a conflict, a choice about your future: who do you go to?',
     options: [
       { label: 'Mostly myself. I figure it out alone.', value: 'alone' },
-      { label: 'People who love me. They try, but they do not always know what to say.', value: 'informal' },
-      { label: 'A teacher or adult I trust — sometimes. It depends on the situation.', value: 'partial' },
+      { label: 'People who love me. They try, but they don't always know what to say.', value: 'informal' },
+      { label: 'A teacher or adult I trust, sometimes. It depends on the situation.', value: 'partial' },
       { label: 'I have people. I want to make it more intentional.', value: 'building' },
     ],
   },
   {
     q: 'What do you actually need?',
     options: [
-      { label: 'Words for what I am already carrying.', value: 'language' },
+      { label: 'Words for what I'm already carrying.', value: 'language' },
       { label: 'A system. Something that makes my decisions feel less chaotic.', value: 'system' },
       { label: 'People who will tell me the truth, not just what I want to hear.', value: 'counsel' },
-      { label: 'Clarity on who I am building and what I am building toward.', value: 'clarity' },
+      { label: 'Clarity on what I'm building and where it's going.', value: 'clarity' },
     ],
   },
 ]
@@ -56,21 +56,21 @@ const QUIZ = [
 const PROFILES = {
   goals: {
     title: 'You know what you want. You need the structure.',
-    desc: 'Drive without a framework burns out. This program gives your goals somewhere to live — a mission, a plan, people who can help you move.',
+    desc: 'Drive without structure burns out. This program gives your goals somewhere to live: a mission, a plan, people who can help you move.',
     next: 'Start with Module 01: Who Am I Building?',
   },
   isolated: {
-    title: 'You are deciding without counsel. That is costing you.',
-    desc: 'Real decisions deserve real input. The program teaches you how to build a board for your life — adults who will tell you the truth.',
+    title: 'You're deciding without counsel. That's costing you.',
+    desc: 'Real decisions deserve real input. The program teaches you how to build a board for your life: adults who will tell you the truth.',
     next: 'Start with Module 03: The Advisory Board.',
   },
   performing: {
-    title: 'You are spending energy on the wrong show.',
-    desc: 'When you have a clear mission and people who know who you actually are, the performance gets quieter. You stop building for the audience and start building for yourself.',
+    title: "You're spending energy on the wrong thing.",
+    desc: "When you've got a clear mission and people who actually know you, the pressure to be everything for everyone starts to lift. You start building for yourself.",
     next: 'Start with Module 01: Who Am I Building?',
   },
   carrying: {
-    title: 'You are holding more than most people your age.',
+    title: 'You're holding more than most people your age.',
     desc: 'This program does not minimize that. It asks: given what you carry, what does your life need to look like? And who should be in your corner while you carry it?',
     next: 'Start where you are. Module 01 or Module 04.',
   },
@@ -111,7 +111,7 @@ function QuizFunnel() {
     <div style={{ textAlign: 'center', padding: '40px 0' }}>
       <p style={{ color: '#D8AB69', fontSize: 10, fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: 14 }}>Three questions</p>
       <h3 style={{ color: '#F5F0E8', fontSize: 22, fontWeight: 300, marginBottom: 10, lineHeight: 1.3 }}>Where do you actually start?</h3>
-      <p style={{ color: 'rgba(245,240,232,0.45)', fontSize: 14, lineHeight: 1.6, maxWidth: 300, margin: '0 auto 28px' }}>Answer honestly. Your results go straight to your inbox with a specific place to begin.</p>
+      <p style={{ color: 'rgba(245,240,232,0.45)', fontSize: 14, lineHeight: 1.6, maxWidth: 300, margin: '0 auto 28px' }}>Answer straight. Your results go to your inbox with a specific place to begin.</p>
       <button onClick={() => setStep(1)} style={{ backgroundColor: '#D8AB69', color: '#0F1B1F', padding: '14px 40px', borderRadius: 6, fontWeight: 700, fontSize: 15, border: 'none', cursor: 'pointer' }}>Start</button>
     </div>
   )
@@ -138,7 +138,7 @@ function QuizFunnel() {
   if (step === 4) return (
     <div>
       <h3 style={{ color: '#F5F0E8', fontSize: 19, fontWeight: 300, marginBottom: 8 }}>Where should we send this?</h3>
-      <p style={{ color: 'rgba(245,240,232,0.45)', fontSize: 13, marginBottom: 22 }}>Your results and where to start — straight to your inbox.</p>
+      <p style={{ color: 'rgba(245,240,232,0.45)', fontSize: 13, marginBottom: 22 }}>Your results and where to start, straight to your inbox.</p>
       <form onSubmit={handleEmail} style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
         <input required type="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="your@email.com" style={{ padding: '13px 16px', backgroundColor: 'rgba(255,255,255,0.08)', border: '1px solid rgba(216,171,105,0.3)', borderRadius: 6, fontSize: 14, color: 'white', outline: 'none' }} />
         <button type="submit" disabled={loading} style={{ backgroundColor: '#D8AB69', color: '#0F1B1F', padding: '13px', borderRadius: 6, fontWeight: 700, fontSize: 14, border: 'none', cursor: 'pointer' }}>
@@ -192,10 +192,10 @@ export default function Home() {
 
           <div style={{ maxWidth: 500, marginTop: 52, opacity: heroVisible ? 1 : 0, transition: 'opacity 1.2s ease 1.1s' }}>
             <p style={{ color: 'rgba(245,240,232,0.55)', fontSize: 17, lineHeight: 1.75, marginBottom: 14 }}>
-              Decisions about school. About who you are. About what you want and whether you are allowed to want it.
+              You're growing up and taking on more. That comes with real decisions. About school. About who you are. About what you want.
             </p>
             <p style={{ color: 'rgba(245,240,232,0.55)', fontSize: 17, lineHeight: 1.75 }}>
-              This program gives you the tools to make those decisions with intention. A mission. An advisory board. A framework that treats you like the person you are still becoming.
+              This program gives you language and structure for those decisions. It reduces the load. You don't have to sort it all out alone.
             </p>
           </div>
 
@@ -215,10 +215,10 @@ export default function Home() {
 
           <div style={{ maxWidth: 800 }}>
             {[
-              { line: 'You know what you want to do with your life.', sub: 'You just do not have a system around it yet.' },
-              { line: 'You are the responsible one in your house.', sub: 'And nobody taught you how to carry that without losing yourself.' },
-              { line: 'You perform a version of yourself for different rooms.', sub: 'School. Home. Friends. You are exhausted from it.' },
-              { line: 'You make big decisions mostly alone.', sub: 'Because the adults around you love you, but they do not always know what to say.' },
+              { line: 'You know what you want to do with your life.', sub: 'You just don't have a system around it yet.' },
+              { line: 'You're growing up and assuming more responsibilities.', sub: "It's easy to lose yourself during this time.' },
+              { line: 'You show up differently in different rooms.', sub: 'School. Home. Friends. That takes a lot of energy.' },
+              { line: 'There are a lot of big decisions you're going to make in the coming years.', sub: 'The adults around you love you, but may have difficulty communicating with you. Be patient with them.' },
             ].map((item, i) => (
               <Reveal key={i} delay={i * 100}>
                 <div style={{ borderTop: '1px solid rgba(15,27,31,0.1)', padding: '28px 0' }}>
@@ -232,7 +232,7 @@ export default function Home() {
           <Reveal delay={400}>
             <div style={{ backgroundColor: '#0F1B1F', padding: '36px 40px', borderRadius: 8, marginTop: 48, maxWidth: 640 }}>
               <p style={{ color: '#F5F0E8', fontSize: 17, fontWeight: 300, lineHeight: 1.65 }}>
-                This is not a motivational program. It is a governance program. It gives you language for what you are already carrying — and a structure to move forward with it.
+                This is a governance program. It gives you language for what you're already carrying and a structure to move forward with it.
               </p>
               <a href="/apply" style={{ display: 'inline-block', marginTop: 20, color: '#D8AB69', fontSize: 13, fontWeight: 700, textDecoration: 'none', borderBottom: '1px solid rgba(216,171,105,0.4)', paddingBottom: 2 }}>Apply to Founded Emerging →</a>
             </div>
@@ -249,11 +249,11 @@ export default function Home() {
           </Reveal>
 
           {[
-            { num: '01', title: 'Who Am I Building?', desc: 'Before you build a life, you name one. Your mission. Your values. What actually matters to you — not to your parents, not to your school, not to your followers. To you.' },
-            { num: '02', title: 'What Do You Actually Own?', desc: 'Health. Time. Relationships. Reputation. Ideas. Money. You have more than you think. This module maps it — and shows you what needs to be protected right now.' },
+            { num: '01', title: 'Who Am I Building?', desc: 'Before you build anything, you need to know what you're building. Your mission. Your values. What actually matters to you.' },
+            { num: '02', title: 'What Do You Actually Own?', desc: 'Health. Time. Relationships. Reputation. Ideas. Money. You've got more than you think. This maps what you already own and what needs protecting.' },
             { num: '03', title: 'Build Your Board', desc: 'You need more than people who love you. You need people who will tell you the truth. This module shows you how to identify them, ask them in, and actually use their counsel.' },
-            { num: '04', title: 'What Did Your Body Learn?', desc: 'Some of what you do automatically — move fast, go quiet, take care of everyone else first — is something you learned. This module names it. Then asks which patterns are still serving you.' },
-            { num: '05', title: 'Who Owns Your Digital Self?', desc: 'Your identity is already being built online. Every post, every platform, every click. This module teaches you to be the architect of that — not the product.' },
+            { num: '04', title: 'What Did Your Body Learn?', desc: 'Some of what you do automatically, moving fast, keeping things inside, taking care of everyone else first, you learned that. This module names it and asks which patterns are still working for you.' },
+            { num: '05', title: 'Who Owns Your Digital Self?', desc: 'Your identity is being built online right now. Every post, every platform, every click. This module puts you in charge of that.' },
             { num: '06', title: 'You Cannot Build Alone', desc: 'The strongest people are not the ones who carry everything themselves. They are the ones with organized, honest community around them. This module builds that.' },
           ].map((mod, i) => (
             <Reveal key={mod.num} delay={i * 55}>
@@ -276,7 +276,7 @@ export default function Home() {
               Three honest questions. One honest answer.
             </h2>
             <p style={{ color: 'rgba(245,240,232,0.5)', fontSize: 15, lineHeight: 1.65 }}>
-              The program has six modules. Where you start depends on where you are. Answer honestly and we will tell you which module matches your situation right now.
+              The program has six modules. Where you start depends on where you are. Answer straight and we'll tell you which module matches your situation right now.
             </p>
             <p style={{ color: 'rgba(245,240,232,0.3)', fontSize: 13, lineHeight: 1.6, marginTop: 16 }}>
               Exhale first. There is no wrong answer.
@@ -304,13 +304,16 @@ export default function Home() {
             <Reveal delay={100}>
               <div>
                 <p style={{ color: '#0F1B1F', fontSize: 16, lineHeight: 1.75, marginBottom: 16 }}>
-                  Your teenager is capable. You know that. What is harder to name is the gap between their capacity and what they have been given to work with. They are making real decisions — about school, about identity, about who to trust — without a framework for any of it.
+                  Your child is going through a lot of changes as you are aware.
                 </p>
                 <p style={{ color: '#0F1B1F', fontSize: 16, lineHeight: 1.75, marginBottom: 16 }}>
-                  This program was built by a clinician and educator who has spent two decades watching young people carry weight they were never given tools for. Founded Emerging gives them the tools — a mission, a board of advisors, a map of what they own and what needs protecting.
+                  This program was built by a clinician who's spent two decades working with young people. It reduces the mental and emotional load of growing up, both internally and in relation to the world around them. It gives them language for what they're going through and structure for the decisions they're already making.
+                </p>
+                <p style={{ color: '#0F1B1F', fontSize: 16, lineHeight: 1.75, marginBottom: 16 }}>
+                  It also prepares them for an agentic future. AI is going to be part of every career, every industry, every major decision. We teach young people how to use it, not to replace their thinking, but to sharpen it. To enhance their learning, their ideas, and their creativity.
                 </p>
                 <p style={{ color: '#0F1B1F', fontSize: 16, lineHeight: 1.75 }}>
-                  It does not replace the relationship between you and your child. It gives them something to bring back to that relationship. Clarity. Language. Direction.
+                  It doesn't replace you. It gives your child a structure for their own life. The students who come through this program become the kind of people others look to. The grounded ones. The wise ones. We're building a generation of mentors.
                 </p>
               </div>
             </Reveal>
@@ -372,7 +375,7 @@ export default function Home() {
           </Reveal>
           <Reveal delay={150}>
             <p style={{ color: 'rgba(15,27,31,0.7)', fontSize: 16, lineHeight: 1.75, marginBottom: 32 }}>
-              Applications are reviewed on a rolling basis. There is no wrong place to begin — the quiz tells you where. Take a breath. Then apply.
+              Applications are reviewed on a rolling basis. There's no wrong place to begin. The quiz tells you where. Then apply.
             </p>
             <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
               <a href="/apply" style={{ backgroundColor: '#0F1B1F', color: '#D8AB69', padding: '16px 36px', borderRadius: 6, fontSize: 14, fontWeight: 700, textDecoration: 'none' }}>Apply now</a>
