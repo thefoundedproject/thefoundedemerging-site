@@ -1,11 +1,11 @@
 export default function Home() {
   const modules = [
-    { num: '01', title: 'Who Am I Building?', desc: 'Before you lead others, you must govern yourself. This module introduces mission, values, and the personal governance framework as the foundation of everything else.' },
-    { num: '02', title: 'Your Six Capitals', desc: 'Health, time, relationships, reputation, intellectual property, and finances. You have more than you think. This module maps what you already own.' },
-    { num: '03', title: 'The Advisory Board', desc: 'Who is in your corner? You need more than supporters — you need counsel. This module teaches you how to build a real advisory board for your life.' },
-    { num: '04', title: 'Survival vs. Strategy', desc: 'What adaptations are you carrying from survival that are costing you now? This module names those patterns and begins the work of trading survival instinct for strategic clarity.' },
-    { num: '05', title: 'Data, Identity & Protection', desc: 'Your digital identity is already being built — by you or for you. This module teaches digital self-stewardship and basic data protection for emerging adults.' },
-    { num: '06', title: 'Community Architecture', desc: 'Agency without community is fragile. This module introduces cooperative structures, mutual accountability, and organized interdependence.' },
+    { num: '01', title: 'Who Am I Building?', desc: 'Governance starts with clarity about who you are and what you are trying to build. This module introduces mission, values, and the framework that holds everything else together.' },
+    { num: '02', title: 'Your Six Capitals', desc: 'You have more than you know. Health, time, relationships, reputation, intellectual property, finances. This module maps what you already own and what needs protection.' },
+    { num: '03', title: 'The Advisory Board', desc: 'Supporters keep you warm. Counsel keeps you accurate. This module walks you through building a real advisory board for your life — people who will tell you the truth.' },
+    { num: '04', title: 'Survival and Strategy', desc: 'Your body learned to survive. Some of those adaptations are still running. This module names them with respect and asks which ones are serving you now.' },
+    { num: '05', title: 'Data, Identity and Protection', desc: 'Your digital identity is already being built. This module teaches you to be the one doing the building, and to understand what you are agreeing to when you use platforms.' },
+    { num: '06', title: 'Community Architecture', desc: 'Agency held alone is brittle. This module builds the structures that make cooperation real — mutual accountability, organized support, and collective strength.' },
   ]
 
   return (
@@ -42,7 +42,7 @@ export default function Home() {
           <div>
             <h2 style={{ color: '#0F1B1F' }} className="text-3xl font-light mb-4">The gap no one names.</h2>
             <p style={{ color: '#0F1B1F' }} className="text-lg leading-relaxed opacity-80">
-              Some young people grow up in environments where they are taught how institutions work — before they enter them. Others are expected to figure it out on arrival. Founded Emerging closes that gap.
+              Some young people arrive at institutions already knowing how they work. They were taught, usually without being told it was happening. Others arrive and have to figure it out alone. That gap has a name now. Founded Emerging closes it.
             </p>
           </div>
           <div style={{ backgroundColor: '#0F1B1F' }} className="p-8 rounded-sm">
@@ -51,8 +51,8 @@ export default function Home() {
               {[
                 'A personal mission and values framework',
                 'A map of their own six capitals',
-                'A life advisory board — real counsel, not just mentors',
-                'Tools to identify and interrupt survival patterns',
+                'A life advisory board built on real counsel',
+                'Language for the survival patterns they are already carrying',
                 'Digital identity and data stewardship skills',
                 'A model for community-based mutual accountability',
               ].map((item) => (
