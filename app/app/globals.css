@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --night-teal: #0F1B1F;
+  --wheat-gold: #D8AB69;
+}
+
+html { scroll-behavior: smooth; }
+body {
+  background-color: #FAFAF7;
+  color: #0F1B1F;
+  font-family: 'Inter', system-ui, sans-serif;
+}
