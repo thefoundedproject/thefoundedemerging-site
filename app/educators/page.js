@@ -20,7 +20,7 @@ export default function Educators() {
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8 mb-16">
             {[
-              { label: 'Ready-to-Teach Curriculum', desc: 'Six modules with session guides, facilitation notes, and student workbook prompts. No advanced training required — the framework teaches itself.' },
+              { label: 'Ready-to-Teach Curriculum', desc: 'Six modules with session guides, facilitation notes, and student workbook prompts. No advanced training required. The framework teaches itself.' },
               { label: 'Cohort Structure', desc: 'Designed for groups of 10–30. Works as a semester elective, a leadership cohort, or a chapter-based program. Adaptable to your calendar.' },
               { label: 'Facilitator Support', desc: 'Access to training materials and direct support from The Founded Project team during your first cohort run.' },
             ].map((item) => (

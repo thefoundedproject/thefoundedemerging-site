@@ -2,7 +2,7 @@ import './globals.css'
 
 export const metadata = {
   title: 'Founded Emerging | Governance of Self Before Governance of the World',
-  description: 'Founded Emerging is the youth arm of The Founded Project. Human Enterprise Theory applied to emerging adults — the governance framework for young people building serious lives.',
+  description: 'Founded Emerging is the youth arm of The Founded Project. Human Enterprise Theory applied to emerging adults. The governance framework for young people building serious lives.',
   keywords: 'Founded Emerging, youth leadership, emerging adult governance, Human Enterprise Theory, youth development, personal governance, student leadership',
   openGraph: {
     title: 'Founded Emerging',

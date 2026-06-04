@@ -42,7 +42,7 @@ export default function Apply() {
             <div className="space-y-6">
               {[
                 { label: 'Students (High School & College)', desc: 'Founded Emerging gives you the governance infrastructure to build your future with intention.' },
-                { label: 'Chapter Leaders (Alpha Phi Alpha & Greek Organizations)', desc: 'Bring the Human Enterprise framework to your chapter as a leadership development program.' },
+                { label: 'Youth Organization Leaders', desc: 'Bring the Human Enterprise framework to your organization as a leadership and governance program.' },
                 { label: 'Institutional Partners (HBCUs & Youth Programs)', desc: 'Integrate Founded Emerging as a course, workshop series, or co-curricular offering.' },
               ].map((item) => (
                 <div key={item.label} className="border-l-2 pl-6" style={{ borderColor: '#D8AB69' }}>
@@ -76,7 +76,7 @@ export default function Apply() {
                     <option value="">Select one...</option>
                     <option>A student (high school)</option>
                     <option>A student (college)</option>
-                    <option>A chapter leader (Alpha Phi Alpha)</option>
+                    <option>A chapter or organization leader</option>
                     <option>A chapter leader (other Greek organization)</option>
                     <option>An educator or institutional partner</option>
                     <option>A youth organization</option>
