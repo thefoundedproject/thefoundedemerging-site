@@ -40,23 +40,21 @@ export async function POST(request) {
             </div>
 
             <p style="font-size:16px;line-height:1.7;color:rgba(245,240,232,0.85);margin-bottom:16px;">
-              ${firstName ? `You have confirmed setup of the Founded Emerging app for ${firstName}.` : 'You have confirmed setup of the Founded Emerging app for your teen.'}
+              ${firstName ? `You\'ve confirmed setup of the Founded Emerging app for ${firstName}.` : 'You\'ve confirmed setup of the Founded Emerging app for your teen.'}
               The app is now unlocked on their device.
             </p>
 
             <p style="font-size:16px;line-height:1.7;color:rgba(245,240,232,0.85);margin-bottom:24px;">
-              Everything ${firstName || 'your teen'} writes — journal entries, evening check-ins, discharge notes —
-              stays on their device. Nothing is stored in the cloud without their action.
-              You will not receive notifications about their journal. What they write is theirs.
+              Everything ${firstName || 'your teen'} writes stays on their device. Journal entries, evening check-ins, discharge notes. The cloud never sees it.
+              You won\'t receive notifications about their journal. What they write stays theirs.
             </p>
 
             <div style="background:rgba(216,171,105,0.1);border-left:3px solid #D8AB69;padding:20px 24px;border-radius:0 8px 8px 0;margin-bottom:28px;">
-              <p style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#D8AB69;margin:0 0 10px;">Safety — what to know</p>
+              <p style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#D8AB69;margin:0 0 10px;">Safety: what to know</p>
               <p style="font-size:14px;line-height:1.7;color:rgba(245,240,232,0.75);margin:0;">
-                If ${firstName || 'your teen'} writes something that suggests they are in distress, the app will
-                respond warmly and offer to connect them with someone they trust — or with the
-                988 Suicide and Crisis Lifeline. The safety net is built for them, not over them.
-                They remain in control of who knows what.
+                If ${firstName || 'your teen'} writes something that suggests they\'re in distress, the app responds warmly and offers to connect them with someone they trust or with the
+                988 Suicide and Crisis Lifeline. The safety net works alongside them.
+                They stay in control of who knows what.
               </p>
             </div>
 
@@ -64,7 +62,7 @@ export async function POST(request) {
               <p style="font-size:13px;color:rgba(245,240,232,0.45);line-height:1.6;margin:0;">
                 Founded Emerging · Ages 13–17 · thefoundedemerging.app<br/>
                 Built by Dr. Stephen Thompson DC, DACM, BCTMB, FAIHM<br/>
-                If you did not set up this app, please contact us at contact@thefoundedemerging.app
+                If you didn\'t set up this app, please contact us at contact@thefoundedemerging.app
               </p>
             </div>
           </div>

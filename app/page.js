@@ -26,17 +26,17 @@ const QUIZ = [
   {
     q: 'Right now, what is most true?',
     options: [
-      { label: 'I know what I want. I just do not know how to organize around it.', value: 'goals' },
-      { label: 'I am making decisions that matter and I am making them mostly alone.', value: 'isolated' },
+      { label: 'I know what I want. I just don\'t know how to organize around it.', value: 'goals' },
+      { label: 'I\'m making decisions that matter and I\'m making them mostly alone.', value: 'isolated' },
       { label: 'I spend a lot of energy being who people expect me to be.', value: 'performing' },
-      { label: 'I am carrying something heavy that most people around me cannot see.', value: 'carrying' },
+      { label: 'I\'m carrying something heavy that most people around me can\'t see.', value: 'carrying' },
     ],
   },
   {
-    q: 'When something big comes up — a decision, a conflict, a choice about your future — who do you go to?',
+    q: 'When something big comes up, a decision or conflict or a choice about your future, who do you go to?',
     options: [
       { label: 'Mostly myself. I figure it out alone.', value: 'alone' },
-      { label: 'People who love me. They try, but they do not always know what to say.', value: 'informal' },
+      { label: 'People who love me. They try, but they don\'t always know what to say.', value: 'informal' },
       { label: 'A teacher or adult I trust, sometimes. It depends on the situation.', value: 'partial' },
       { label: 'I have people. I want to make it more intentional.', value: 'building' },
     ],
@@ -44,10 +44,10 @@ const QUIZ = [
   {
     q: 'What do you actually need?',
     options: [
-      { label: 'Words for what I am already going through.', value: 'language' },
+      { label: 'Words for what I\'m already going through.', value: 'language' },
       { label: 'A system. Something that makes my decisions feel less chaotic.', value: 'system' },
-      { label: 'People who will tell me the truth, not just what I want to hear.', value: 'counsel' },
-      { label: 'Clarity on what I am building and where it is going.', value: 'clarity' },
+      { label: 'People who will tell me the truth.', value: 'counsel' },
+      { label: 'Clarity on what I\'m building and where it\'s going.', value: 'clarity' },
     ],
   },
 ]
@@ -55,42 +55,42 @@ const QUIZ = [
 const PROFILES = {
   goals: {
     title: 'You know what you want. You need the structure.',
-    desc: 'Drive without structure burns out. This program gives your goals somewhere to live: a mission, a plan, people who can help you move.',
+    desc: 'Drive without structure burns out. This program gives your goals somewhere to live: a mission, a plan, and people who can help you move.',
     next: 'Start with Module 01: Who Am I Building?',
   },
   isolated: {
-    title: 'You are deciding without counsel. That is costing you.',
+    title: 'You\'re deciding without counsel. That\'s costing you.',
     desc: 'Real decisions deserve real input. The program teaches you how to build a board for your life: adults who will tell you the truth.',
     next: 'Start with Module 03: The Advisory Board.',
   },
   performing: {
-    title: 'You are spending energy on the wrong thing.',
+    title: 'You\'re spending energy on the wrong thing.',
     desc: 'When you have a clear mission and people who actually know you, the pressure to be everything for everyone starts to lift. You start building for yourself.',
     next: 'Start with Module 01: Who Am I Building?',
   },
   carrying: {
-    title: 'You are holding more than most people your age.',
-    desc: 'This program does not minimize that. It asks: given what you carry, what does your life need to look like? And who should be in your corner while you carry it?',
+    title: 'You\'re carrying more than most people your age.',
+    desc: 'This program doesn\'t minimize that. It asks: given what you carry, what does your life need to look like? And who should be in your corner while you carry it?',
     next: 'Start where you are. Module 01 or Module 04.',
   },
   language: {
-    title: 'You need words for what is already happening.',
-    desc: 'That is exactly what this program provides. Language first. Then structure. Then people.',
+    title: 'You need words for what\'s already happening.',
+    desc: 'That\'s exactly what this program provides. Language. Structure. People who can help.',
     next: 'Start with Module 01: Who Am I Building?',
   },
   system: {
-    title: 'You need a system, not more advice.',
-    desc: 'This program builds one. A mission. A board. A set of decisions you make on purpose instead of by default.',
+    title: 'You need a system. Real advice with a structure around it.',
+    desc: 'This program builds one. A mission. A board. A set of decisions you make on purpose.',
     next: 'Start with Module 02: What Do You Actually Own?',
   },
   counsel: {
-    title: 'You need real people, not cheerleaders.',
+    title: 'You need real people, the ones who will give it to you straight.',
     desc: 'Module 03 is built for this. How to identify the right adults. How to ask them in. How to actually use their counsel.',
     next: 'Start with Module 03: The Advisory Board.',
   },
   clarity: {
-    title: 'You need to see the arc, not just the next step.',
-    desc: 'The six-month structure gives you that. Each module connects to the one before it. By the end you have a direction, not just intentions.',
+    title: 'You need to see the arc.',
+    desc: 'The six-month structure gives you that. Each module connects to the one before it. By the end you have a direction and the intentions behind it.',
     next: 'Start with Module 01: Who Am I Building?',
   },
 }
@@ -194,9 +194,9 @@ export default function Home() {
           </p>
           <div style={{ maxWidth: 820 }}>
             {[
-              'You are already making',
+              'You\'re already making',
               <span key="2" style={{ color: '#D8AB69' }}>real decisions.</span>,
-              'No one gave you the map.',
+              'You\'re doing it without a map.',
             ].map((line, i) => (
               <div key={i} style={{ overflow: 'hidden' }}>
                 <div style={{ opacity: heroVisible ? 1 : 0, transform: heroVisible ? 'none' : 'translateY(100%)', transition: `all 0.9s ease ${380 + i * 140}ms`, fontSize: 'clamp(40px, 7vw, 88px)', fontWeight: 300, color: '#F5F0E8', lineHeight: 1.08, letterSpacing: '-0.025em' }}>
@@ -207,16 +207,16 @@ export default function Home() {
           </div>
           <div style={{ maxWidth: 500, marginTop: 52, opacity: heroVisible ? 1 : 0, transition: 'opacity 1.2s ease 1.1s' }}>
             <p style={{ color: 'rgba(245,240,232,0.55)', fontSize: 17, lineHeight: 1.75, marginBottom: 14 }}>
-              You are growing up and taking on more. That comes with real decisions — about school, about who you are, about what you want.
+              You&apos;re growing up and taking on more. That comes with real decisions about school, about who you are, about what you want.
             </p>
             <p style={{ color: 'rgba(245,240,232,0.55)', fontSize: 17, lineHeight: 1.75 }}>
-              This program gives you language and structure for those decisions. It reduces the load. You do not have to sort it all out alone.
+              This program gives you language and structure for those decisions. It reduces the load. You don&apos;t have to sort it all out alone.
             </p>
           </div>
           <div style={{ marginTop: 52, display: 'flex', gap: 16, flexWrap: 'wrap', opacity: heroVisible ? 1 : 0, transition: 'opacity 1.4s ease 1.5s' }}>
             <a href="/apply" style={{ backgroundColor: '#D8AB69', color: '#0F1B1F', padding: '16px 36px', borderRadius: 6, fontSize: 14, fontWeight: 700, textDecoration: 'none' }}>Apply to the program</a>
             <a href="#app" style={{ backgroundColor: 'transparent', color: 'rgba(245,240,232,0.65)', padding: '16px 36px', borderRadius: 6, fontSize: 14, fontWeight: 600, textDecoration: 'none', border: '1px solid rgba(245,240,232,0.18)' }}>Get the app</a>
-            <a href="#parents" style={{ backgroundColor: 'transparent', color: 'rgba(245,240,232,0.45)', padding: '16px 36px', borderRadius: 6, fontSize: 14, fontWeight: 600, textDecoration: 'none', border: '1px solid rgba(245,240,232,0.12)' }}>Parents — read this first</a>
+            <a href="#parents" style={{ backgroundColor: 'transparent', color: 'rgba(245,240,232,0.45)', padding: '16px 36px', borderRadius: 6, fontSize: 14, fontWeight: 600, textDecoration: 'none', border: '1px solid rgba(245,240,232,0.12)' }}>Parents: read this first</a>
           </div>
         </div>
       </section>
@@ -230,7 +230,7 @@ export default function Home() {
               Founded Emerging lives on your phone.
             </h2>
             <p style={{ color: 'rgba(245,240,232,0.5)', fontSize: 17, lineHeight: 1.7, maxWidth: 580, marginBottom: 60 }}>
-              The program curriculum is structured. The app is daily. Morning check-ins, evening wind-downs, a private journal, and the people in your corner — all in one place.
+              The program curriculum is structured. The app is daily. Morning check-ins, evening wind-downs, a private journal, and the people in your corner. All in one place.
             </p>
           </Reveal>
 
@@ -238,8 +238,8 @@ export default function Home() {
             {[
               { icon: '◎', title: 'Morning Check-In', desc: 'Start the day grounded. Two minutes. What matters today, how your body feels, one intention.' },
               { icon: '●', title: 'Evening Wind-Down', desc: 'Close the day intentionally. Put down what happened. Discharge what needs to go. Set up tomorrow.' },
-              { icon: '◈', title: 'Private Journal', desc: 'Everything you write stays on your device. No cloud. No sharing. No one else reads it.' },
-              { icon: '◐', title: 'Your Board', desc: 'The adults you actually trust — added by you, available to you. Not a notification. A real person.' },
+              { icon: '◈', title: 'Private Journal', desc: 'Everything you write stays on your device. The cloud never sees it. Your journal is yours alone.' },
+              { icon: '◐', title: 'Your Board', desc: 'The adults you actually trust. You add them. You reach them in one tap when you need them.' },
               { icon: '✦', title: 'Goal Tracking', desc: "Your goals have a home. They don't disappear when life gets busy." },
               { icon: '⚖', title: 'Decision Protocol', desc: 'Big choices get a structured process. Write the question. Consult your board. Make the call. Record it.' },
             ].map((f, i) => (
@@ -271,7 +271,7 @@ export default function Home() {
               This app is aware of what teenagers actually go through.
             </h2>
             <p style={{ color: 'rgba(245,240,232,0.55)', fontSize: 17, lineHeight: 1.7, maxWidth: 600, marginBottom: 60 }}>
-              We built the safety layer before anything else. Not as a checkbox. As the foundation.
+              We built the safety layer before anything else. It is the foundation everything else sits on.
             </p>
           </Reveal>
 
@@ -279,32 +279,32 @@ export default function Home() {
             {[
               {
                 title: 'Crisis detection built in',
-                desc: 'The app quietly scans journal and evening entries for language patterns that may signal distress — self-harm, abuse, hopelessness. When something surfaces, it responds warmly: not with alarm, but with a direct offer to connect.',
+                desc: 'The app quietly scans journal and evening entries for language patterns that may signal distress around self-harm, abuse, or hopelessness. When something surfaces, the app responds warmly and offers a direct way to connect with help.',
                 tag: 'AFSP · SAMHSA guidelines applied',
               },
               {
                 title: 'One tap to a trusted adult',
-                desc: 'If something serious comes up, the teen can reach any adult on their board in one tap — call, text, or message. No searching for a number. No navigating away. The board is always one step from the journal.',
+                desc: 'If something serious comes up, the teen can reach any adult on their board in one tap. Call, text, or message. The board sits one step from the journal at all times.',
                 tag: 'Teen controls who is on the board',
               },
               {
                 title: '988 and Crisis Text Line integrated',
-                desc: 'The 988 Suicide and Crisis Lifeline and Crisis Text Line (text HOME to 741741) are built into the app — not buried in a settings menu. They surface when the context calls for them.',
+                desc: 'The 988 Suicide and Crisis Lifeline and Crisis Text Line (text HOME to 741741) live inside the app. They surface when the context calls for them.',
                 tag: 'Always accessible, never pushed',
               },
               {
                 title: 'Parental consent required',
-                desc: 'The Founded Emerging app does not unlock until a parent or guardian confirms setup by email. No personal data is collected from the teen before consent is confirmed.',
+                desc: 'The Founded Emerging app stays locked until a parent or guardian confirms setup by email. The app collects no personal data from the teen before that confirmation.',
                 tag: 'COPPA-aligned · email verification',
               },
               {
                 title: 'Everything stays on the device',
-                desc: 'Journal entries, discharge notes, board conversations — none of it leaves the phone unless the teen actively shares it. No cloud sync, no analytics on minors, no third-party data.',
+                desc: 'Journal entries, discharge notes, and board conversations stay on the phone. None of it leaves unless the teen actively shares it. The cloud never sees it.',
                 tag: 'Local-only · no cloud by default',
               },
               {
                 title: 'Safe messaging standards',
-                desc: "Every prompt in the app follows published safe messaging guidelines for adolescent mental health. We do not ask leading questions, we do not dramatize struggle, and we do not require the teen to perform wellness.",
+                desc: 'Every prompt in the app follows published safe messaging guidelines for adolescent mental health. We don\'t ask leading questions. We don\'t dramatize struggle. We don\'t require the teen to perform wellness.',
                 tag: 'Reviewed against clinical guidelines',
               },
             ].map((item, i) => (
@@ -321,7 +321,7 @@ export default function Home() {
           <Reveal delay={300}>
             <div style={{ backgroundColor: 'rgba(216,171,105,0.08)', borderLeft: '3px solid #D8AB69', padding: '24px 28px', borderRadius: '0 8px 8px 0', maxWidth: 720 }}>
               <p style={{ color: '#F5F0E8', fontSize: 16, lineHeight: 1.65, marginBottom: 0 }}>
-                "This app was built by a clinician who has spent two decades with young people in crisis. The safety features are not an add-on. They are the reason it exists."
+                &ldquo;A clinician built this app after two decades with young people in crisis. The safety features are the reason it exists.&rdquo;
               </p>
               <p style={{ color: 'rgba(216,171,105,0.65)', fontSize: 12, marginTop: 12, fontWeight: 600, letterSpacing: '0.05em' }}>DR. STEPHEN THOMPSON DC, DACM, BCTMB, FAIHM · FOUNDER</p>
             </div>
@@ -337,10 +337,10 @@ export default function Home() {
           </Reveal>
           <div style={{ maxWidth: 800 }}>
             {[
-              { line: 'You know what you want to do with your life.', sub: 'You just do not have a system around it yet.' },
-              { line: 'You are growing up and taking on more responsibilities.', sub: 'It is easy to lose yourself during this time.' },
+              { line: 'You know what you want to do with your life.', sub: 'You just don\'t have a system around it yet.' },
+              { line: 'You\'re growing up and taking on more responsibilities.', sub: 'It\'s easy to lose yourself during this time.' },
               { line: 'You show up differently in different rooms.', sub: 'School. Home. Friends. That takes a lot of energy.' },
-              { line: 'There are a lot of big decisions ahead of you.', sub: 'The adults around you love you, but may have difficulty communicating with you. Be patient with them.' },
+              { line: 'There are a lot of big decisions ahead of you.', sub: 'The adults around you love you. They may have a hard time communicating with you sometimes. Be patient with them.' },
             ].map((item, i) => (
               <Reveal key={i} delay={i * 100}>
                 <div style={{ borderTop: '1px solid rgba(15,27,31,0.1)', padding: '28px 0' }}>
@@ -353,7 +353,7 @@ export default function Home() {
           <Reveal delay={400}>
             <div style={{ backgroundColor: '#0F1B1F', padding: '36px 40px', borderRadius: 8, marginTop: 48, maxWidth: 640 }}>
               <p style={{ color: '#F5F0E8', fontSize: 17, fontWeight: 300, lineHeight: 1.65 }}>
-                This is a governance program. It gives you language for what you are already going through and a structure to move forward with it.
+                This is a governance program. It gives you language for what you&apos;re already going through and a structure to move forward with it.
               </p>
               <a href="/apply" style={{ display: 'inline-block', marginTop: 20, color: '#D8AB69', fontSize: 13, fontWeight: 700, textDecoration: 'none', borderBottom: '1px solid rgba(216,171,105,0.4)', paddingBottom: 2 }}>Apply to Founded Emerging →</a>
             </div>
@@ -369,12 +369,12 @@ export default function Home() {
             <h2 style={{ color: '#F5F0E8', fontSize: 'clamp(26px, 4vw, 48px)', fontWeight: 300, letterSpacing: '-0.02em', marginBottom: 60 }}>Six modules. About six months. One arc.</h2>
           </Reveal>
           {[
-            { num: '01', title: 'Who Am I Building?', desc: 'Before you build anything, you need to know what you are building. Your mission. Your values. What actually matters to you.' },
+            { num: '01', title: 'Who Am I Building?', desc: 'Before you build anything, you need to know what you\'re building. Your mission. Your values. What actually matters to you.' },
             { num: '02', title: 'What Do You Actually Own?', desc: 'Health. Time. Relationships. Reputation. Ideas. Money. You have more than you think. This maps what you already own and what needs protecting.' },
-            { num: '03', title: 'Build Your Board', desc: 'You need more than people who love you. You need people who will tell you the truth. This module shows you how to identify them, ask them in, and actually use their counsel.' },
-            { num: '04', title: 'What Did Your Body Learn?', desc: 'Some of what you do automatically — moving fast, keeping things inside, taking care of everyone else first — you learned that. This module names it and asks which patterns are still working for you.' },
-            { num: '05', title: 'Who Owns Your Digital Self?', desc: 'Your identity is being built online right now. Every post, every platform, every click. This module puts you in charge of that.' },
-            { num: '06', title: 'You Cannot Build Alone', desc: 'The strongest people are not the ones who carry everything themselves. They are the ones with organized, honest community around them. This module builds that.' },
+            { num: '03', title: 'Build Your Board', desc: 'You need more than people who love you. You need people who will tell you the truth. This module shows you how to identify them, ask them in, and use their counsel.' },
+            { num: '04', title: 'What Did Your Body Learn?', desc: 'You learned how to move fast, keep things inside, and take care of everyone else first. This module names those patterns and asks which ones still work for you.' },
+            { num: '05', title: 'Who Owns Your Digital Self?', desc: 'You\'re building your identity online right now. Every post. Every platform. Every click. This module puts you in charge of that.' },
+            { num: '06', title: 'You Can\'t Build Alone', desc: 'The strongest people have organized, honest community around them. This module builds that community for you.' },
           ].map((mod, i) => (
             <Reveal key={mod.num} delay={i * 55}>
               <div style={{ borderTop: '1px solid rgba(216,171,105,0.12)', padding: '28px 0', display: 'grid', gridTemplateColumns: '50px 220px 1fr', gap: 20, alignItems: 'start' }}>
@@ -396,10 +396,10 @@ export default function Home() {
               Three honest questions. One honest answer.
             </h2>
             <p style={{ color: 'rgba(245,240,232,0.5)', fontSize: 15, lineHeight: 1.65 }}>
-              The program has six modules. Where you start depends on where you are. Answer straight and we will tell you which module fits your situation right now.
+              The program has six modules. Where you start depends on where you are. Answer straight and we&apos;ll tell you which module fits your situation right now.
             </p>
             <p style={{ color: 'rgba(245,240,232,0.3)', fontSize: 13, lineHeight: 1.6, marginTop: 16 }}>
-              There is no wrong answer.
+              No wrong answer here.
             </p>
           </Reveal>
           <Reveal delay={180}>
@@ -416,7 +416,7 @@ export default function Home() {
           <Reveal>
             <p style={{ color: '#D8AB69', fontSize: 10, fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: 16 }}>For Parents</p>
             <h2 style={{ color: '#0F1B1F', fontSize: 'clamp(26px, 4vw, 44px)', fontWeight: 300, letterSpacing: '-0.02em', lineHeight: 1.2, marginBottom: 40 }}>
-              You can see it.<br />You just do not have the words for it yet.
+              You can see it.<br />You just don&apos;t have the words for it yet.
             </h2>
           </Reveal>
 
@@ -424,28 +424,28 @@ export default function Home() {
             <Reveal delay={100}>
               <div>
                 <p style={{ color: '#0F1B1F', fontSize: 16, lineHeight: 1.75, marginBottom: 16 }}>
-                  Your child is going through significant changes — internally and in relation to the world around them. You see it. The stress. The social pressure. The decisions they are making mostly alone.
+                  Your child is going through significant changes, internally and in relation to the world around them. You see it. The stress. The social pressure. The decisions they&apos;re making mostly alone.
                 </p>
                 <p style={{ color: '#0F1B1F', fontSize: 16, lineHeight: 1.75, marginBottom: 16 }}>
-                  This program was built by a clinician who has spent two decades working with young people. It reduces the mental and emotional load of growing up. It gives them language for what they are going through and a structure for decisions they are already making.
+                  A clinician built this program after two decades working with young people. It reduces the mental and emotional load of growing up. It gives them language for what they&apos;re going through and a structure for the decisions they&apos;re already making.
                 </p>
                 <p style={{ color: '#0F1B1F', fontSize: 16, lineHeight: 1.75, marginBottom: 16 }}>
-                  It also prepares them for an agentic future. AI is part of every career and every major decision coming their way. We teach young people how to use it — not to replace their thinking, but to sharpen it. To enhance learning, ideation, and creativity.
+                  It also prepares them for an agentic future. AI is part of every career and every major decision coming their way. We teach young people how to use it to sharpen their thinking, enhance learning, and support their ideation and creativity.
                 </p>
                 <p style={{ color: '#0F1B1F', fontSize: 16, lineHeight: 1.75, marginBottom: 24 }}>
-                  The students who go through this program become the kind of people others turn to. Grounded. Clear. Good counsel. We are building a generation of mentors.
+                  The students who finish this program become the kind of people others turn to. Grounded. Clear. Good counsel. We&apos;re building a generation of mentors.
                 </p>
 
                 {/* Parental consent callout */}
                 <div style={{ backgroundColor: '#0F1B1F', borderRadius: 8, padding: '24px 28px', marginBottom: 24 }}>
                   <p style={{ color: '#D8AB69', fontSize: 10, fontWeight: 700, letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: 10 }}>How setup works</p>
                   <p style={{ color: 'rgba(245,240,232,0.75)', fontSize: 14, lineHeight: 1.7, marginBottom: 0 }}>
-                    When your teen downloads the Founded Emerging app, a parent or guardian sets it up first. You confirm by email before the app unlocks. Nothing is collected from your teen until you confirm. After that, the journal and all data stays on their device — not in the cloud, not accessible to us.
+                    When your teen downloads the Founded Emerging app, a parent or guardian sets it up first. You confirm by email before the app unlocks. We collect nothing from your teen until you confirm. After that, the journal and all data stays on their device. The cloud never sees it.
                   </p>
                 </div>
 
                 <p style={{ color: 'rgba(15,27,31,0.5)', fontSize: 13, lineHeight: 1.65 }}>
-                  If your child ever uses the journal to express something serious — distress, abuse, self-harm — the app responds with warmth, not alarm, and offers to connect them with someone on their board or a crisis line. You will not receive notifications about their journal. What they write is theirs. The safety net is built for them, not over them.
+                  If your child uses the journal to express something serious like distress, abuse, or self-harm, the app responds with warmth and offers to connect them with someone on their board or a crisis line. You won&apos;t receive notifications about their journal. What they write stays theirs. The safety net works alongside them.
                 </p>
               </div>
             </Reveal>
@@ -455,13 +455,13 @@ export default function Home() {
                 <p style={{ color: '#D8AB69', fontSize: 10, fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase', marginBottom: 24 }}>What your child walks away with</p>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
                   {[
-                    { item: 'A written mission statement', note: 'theirs, not yours' },
+                    { item: 'A written mission statement', note: 'theirs alone' },
                     { item: 'A map of their six capitals', note: 'what they have and what needs care' },
                     { item: 'A real advisory board', note: 'people who tell them the truth' },
-                    { item: 'Language for what they carry', note: 'named, not buried' },
-                    { item: 'Digital self-awareness', note: 'who is building their identity and how' },
-                    { item: 'A model for community', note: 'not alone, not helpless' },
-                    { item: 'Crisis support, always one tap away', note: 'without requiring you to know first' },
+                    { item: 'Language for what they carry', note: 'named clearly' },
+                    { item: 'Digital self-awareness', note: 'who shapes their identity online' },
+                    { item: 'A model for community', note: 'a way to lean on others well' },
+                    { item: 'Crisis support, always one tap away', note: 'works without you needing to know first' },
                   ].map(({ item, note }) => (
                     <div key={item} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', borderBottom: '1px solid rgba(216,171,105,0.12)', paddingBottom: 12 }}>
                       <p style={{ color: '#F5F0E8', fontSize: 14, fontWeight: 500 }}>{item}</p>
@@ -482,7 +482,7 @@ export default function Home() {
       <section style={{ backgroundColor: '#0F1B1F', padding: '80px 24px' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 1, backgroundColor: 'rgba(216,171,105,0.08)' }}>
           {[
-            { group: 'Students ages 13–17', desc: 'Ready to take their life seriously before anyone told them they could.' },
+            { group: 'Students ages 13–17', desc: 'Ready to take their life seriously without waiting for permission.' },
             { group: 'Youth programs', desc: 'Organizations that already have young people\'s trust and want to give them something real.' },
             { group: 'Educators', desc: 'Teachers and advisors who see what their students are capable of and want curriculum that matches it.' },
             { group: 'Parents', desc: 'Watching their child carry weight alone. Ready to give them something more than advice.' },
@@ -503,12 +503,12 @@ export default function Home() {
         <div style={{ maxWidth: 1200, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 48, alignItems: 'center' }}>
           <Reveal>
             <h2 style={{ color: '#0F1B1F', fontSize: 'clamp(32px, 5vw, 60px)', fontWeight: 300, lineHeight: 1.08, letterSpacing: '-0.02em' }}>
-              You do not need<br />to have it figured out.<br />You just need to start.
+              You don&apos;t need<br />to have it figured out.<br />You just need to start.
             </h2>
           </Reveal>
           <Reveal delay={150}>
             <p style={{ color: 'rgba(15,27,31,0.7)', fontSize: 16, lineHeight: 1.75, marginBottom: 32 }}>
-              Applications are reviewed on a rolling basis. There is no wrong place to begin. The quiz tells you where. Then apply.
+              We review applications on a rolling basis. The quiz tells you where to begin. Then apply.
             </p>
             <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
               <a href="/apply" style={{ backgroundColor: '#0F1B1F', color: '#D8AB69', padding: '16px 36px', borderRadius: 6, fontSize: 14, fontWeight: 700, textDecoration: 'none' }}>Apply now</a>
