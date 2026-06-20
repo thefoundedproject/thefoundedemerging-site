@@ -58,7 +58,7 @@ export default function Apply() {
               <div style={{ backgroundColor: '#0F1B1F', borderRadius: '12px' }} className="p-10 text-center">
                 <p style={{ color: '#D8AB69' }} className="text-4xl mb-4">✦</p>
                 <p className="text-white text-xl font-semibold mb-3">Application received.</p>
-                <p className="text-gray-300 text-sm leading-relaxed">Applications are reviewed on a rolling basis. You will hear back within 2 weeks.</p>
+                <p className="text-gray-300 text-sm leading-relaxed">We review applications on a rolling basis. You&apos;ll hear back within 2 weeks.</p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4">
@@ -88,13 +88,13 @@ export default function Apply() {
                 </div>
                 <div>
                   <label style={{ color: '#0F1B1F' }} className="text-xs font-semibold uppercase tracking-wider block mb-1">Why do you want to participate?</label>
-                  <textarea value={form.reason} onChange={set('reason')} rows={5} style={{ backgroundColor: 'white', border: '1px solid #D8AB69', color: '#0F1B1F' }} className="w-full px-4 py-3 text-sm rounded outline-none resize-none" placeholder="Tell us where you are and where you are trying to go." />
+                  <textarea value={form.reason} onChange={set('reason')} rows={5} style={{ backgroundColor: 'white', border: '1px solid #D8AB69', color: '#0F1B1F' }} className="w-full px-4 py-3 text-sm rounded outline-none resize-none" placeholder="Tell us where you are and where you're trying to go." />
                 </div>
                 {status === 'error' && <p style={{ color: '#B4533C' }} className="text-sm">Something went wrong. Please try again.</p>}
                 <button type="submit" disabled={status === 'sending'} style={{ backgroundColor: '#0F1B1F', color: '#D8AB69', opacity: status === 'sending' ? 0.7 : 1 }} className="w-full py-4 text-sm font-semibold rounded transition-opacity">
                   {status === 'sending' ? 'Submitting...' : 'Submit Application'}
                 </button>
-                <p style={{ color: '#0F1B1F' }} className="text-xs opacity-60 text-center">Applications reviewed on a rolling basis. You will hear back within 2 weeks.</p>
+                <p style={{ color: '#0F1B1F' }} className="text-xs opacity-60 text-center">We review applications on a rolling basis. You&apos;ll hear back within 2 weeks.</p>
               </form>
             )}
           </div>

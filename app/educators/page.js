@@ -11,7 +11,7 @@ export default function Educators() {
           <p style={{ color: '#D8AB69' }} className="text-sm font-semibold uppercase tracking-widest mb-4">For Educators</p>
           <h1 className="text-white text-5xl font-light leading-tight mb-6">Bring it to your students.</h1>
           <p className="text-gray-300 text-lg max-w-2xl">
-            Founded Emerging is designed for integration into classrooms, campus programs, Greek life leadership development, and community youth organizations. We provide the curriculum. You provide the trust you have already built with your students.
+            Founded Emerging fits into classrooms, campus programs, Greek life leadership development, and community youth organizations. We provide the curriculum. You provide the trust you&apos;ve already built with your students.
           </p>
         </div>
       </section>
@@ -20,8 +20,8 @@ export default function Educators() {
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8 mb-16">
             {[
-              { label: 'Ready-to-Teach Curriculum', desc: 'Six modules with session guides, facilitation notes, and student workbook prompts. No advanced training required. The framework teaches itself.' },
-              { label: 'Cohort Structure', desc: 'Designed for groups of 10–30. Works as a semester elective, a leadership cohort, or a chapter-based program. Adaptable to your calendar.' },
+              { label: 'Ready-to-Teach Curriculum', desc: 'Six modules with session guides, facilitation notes, and student workbook prompts. You don\'t need advanced training. The framework teaches itself.' },
+              { label: 'Cohort Structure', desc: 'Works with groups of 10–30. Runs as a semester elective, a leadership cohort, or a chapter-based program. Flexes to your calendar.' },
               { label: 'Facilitator Support', desc: 'Access to training materials and direct support from The Founded Project team during your first cohort run.' },
             ].map((item) => (
               <div key={item.label} className="border-t-2 pt-6" style={{ borderColor: '#D8AB69' }}>

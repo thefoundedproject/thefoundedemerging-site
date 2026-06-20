@@ -190,13 +190,13 @@ export default function Home() {
         <div style={{ position: 'absolute', top: 0, right: 0, width: '40%', height: '100%', background: 'linear-gradient(to left, rgba(216,171,105,0.04), transparent)', pointerEvents: 'none' }} />
         <div style={{ maxWidth: 1200, margin: '0 auto', width: '100%' }}>
           <p style={{ color: '#D8AB69', fontSize: 10, fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: 60, opacity: heroVisible ? 1 : 0, transition: 'opacity 0.8s 200ms' }}>
-            Founded Emerging · Ages 13–17
+            Founded Emerging · For Anyone Becoming · Ages 13–26 and beyond
           </p>
           <div style={{ maxWidth: 820 }}>
             {[
-              'You\'re already making',
-              <span key="2" style={{ color: '#D8AB69' }}>real decisions.</span>,
-              'You\'re doing it without a map.',
+              'You\'re learning to',
+              <span key="2" style={{ color: '#D8AB69' }}>govern your own life.</span>,
+              'Here\'s the walkthrough.',
             ].map((line, i) => (
               <div key={i} style={{ overflow: 'hidden' }}>
                 <div style={{ opacity: heroVisible ? 1 : 0, transform: heroVisible ? 'none' : 'translateY(100%)', transition: `all 0.9s ease ${380 + i * 140}ms`, fontSize: 'clamp(40px, 7vw, 88px)', fontWeight: 300, color: '#F5F0E8', lineHeight: 1.08, letterSpacing: '-0.025em' }}>
@@ -205,18 +205,18 @@ export default function Home() {
               </div>
             ))}
           </div>
-          <div style={{ maxWidth: 500, marginTop: 52, opacity: heroVisible ? 1 : 0, transition: 'opacity 1.2s ease 1.1s' }}>
+          <div style={{ maxWidth: 520, marginTop: 52, opacity: heroVisible ? 1 : 0, transition: 'opacity 1.2s ease 1.1s' }}>
             <p style={{ color: 'rgba(245,240,232,0.55)', fontSize: 17, lineHeight: 1.75, marginBottom: 14 }}>
-              You&apos;re growing up and taking on more. That comes with real decisions about school, about who you are, about what you want.
+              Founded Emerging is built for the work of becoming an agentic human. The teenager taking on real decisions for the first time. The young adult who just got responsible for the rental car, the doctor visit, the lease. The person early in recovery rebuilding day by day. The newly-divorced parent figuring out what their own life means.
             </p>
             <p style={{ color: 'rgba(245,240,232,0.55)', fontSize: 17, lineHeight: 1.75 }}>
-              This program gives you language and structure for those decisions. It reduces the load. You don&apos;t have to sort it all out alone.
+              You get language, structure, and a walkthrough. You stop sorting it out alone.
             </p>
           </div>
           <div style={{ marginTop: 52, display: 'flex', gap: 16, flexWrap: 'wrap', opacity: heroVisible ? 1 : 0, transition: 'opacity 1.4s ease 1.5s' }}>
-            <a href="/apply" style={{ backgroundColor: '#D8AB69', color: '#0F1B1F', padding: '16px 36px', borderRadius: 6, fontSize: 14, fontWeight: 700, textDecoration: 'none' }}>Apply to the program</a>
-            <a href="#app" style={{ backgroundColor: 'transparent', color: 'rgba(245,240,232,0.65)', padding: '16px 36px', borderRadius: 6, fontSize: 14, fontWeight: 600, textDecoration: 'none', border: '1px solid rgba(245,240,232,0.18)' }}>Get the app</a>
-            <a href="#parents" style={{ backgroundColor: 'transparent', color: 'rgba(245,240,232,0.45)', padding: '16px 36px', borderRadius: 6, fontSize: 14, fontWeight: 600, textDecoration: 'none', border: '1px solid rgba(245,240,232,0.12)' }}>Parents: read this first</a>
+            <a href="#app" style={{ backgroundColor: '#D8AB69', color: '#0F1B1F', padding: '16px 36px', borderRadius: 6, fontSize: 14, fontWeight: 700, textDecoration: 'none' }}>Get the app</a>
+            <a href="/apply" style={{ backgroundColor: 'transparent', color: 'rgba(245,240,232,0.65)', padding: '16px 36px', borderRadius: 6, fontSize: 14, fontWeight: 600, textDecoration: 'none', border: '1px solid rgba(245,240,232,0.18)' }}>Apply to the cohort program</a>
+            <a href="#parents" style={{ backgroundColor: 'transparent', color: 'rgba(245,240,232,0.45)', padding: '16px 36px', borderRadius: 6, fontSize: 14, fontWeight: 600, textDecoration: 'none', border: '1px solid rgba(245,240,232,0.12)' }}>13–17: parents read this first</a>
           </div>
         </div>
       </section>
@@ -268,10 +268,10 @@ export default function Home() {
           <Reveal>
             <p style={{ color: '#D8AB69', fontSize: 10, fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: 16 }}>Built for Safety</p>
             <h2 style={{ color: '#F5F0E8', fontSize: 'clamp(26px, 4vw, 44px)', fontWeight: 300, letterSpacing: '-0.02em', lineHeight: 1.2, marginBottom: 16 }}>
-              This app is aware of what teenagers actually go through.
+              This app is aware of what people actually go through.
             </h2>
             <p style={{ color: 'rgba(245,240,232,0.55)', fontSize: 17, lineHeight: 1.7, maxWidth: 600, marginBottom: 60 }}>
-              We built the safety layer before anything else. It is the foundation everything else sits on.
+              The safety layer was built before anything else. It is the foundation everything else sits on. Teenagers in distress. Young adults overwhelmed by their first round of grown-up decisions. People in early recovery navigating a hard week. Newly-divorced parents who haven&apos;t thought about themselves in a decade. The system protects all of them.
             </p>
           </Reveal>
 
@@ -279,13 +279,13 @@ export default function Home() {
             {[
               {
                 title: 'Crisis detection built in',
-                desc: 'The app quietly scans journal and evening entries for language patterns that may signal distress around self-harm, abuse, or hopelessness. When something surfaces, the app responds warmly and offers a direct way to connect with help.',
+                desc: 'The app scans journal and evening entries on the device for language patterns that may signal distress around self-harm, abuse, or hopelessness. When something surfaces, the app responds warmly and offers a direct way to connect with help.',
                 tag: 'AFSP · SAMHSA guidelines applied',
               },
               {
-                title: 'One tap to a trusted adult',
-                desc: 'If something serious comes up, the teen can reach any adult on their board in one tap. Call, text, or message. The board sits one step from the journal at all times.',
-                tag: 'Teen controls who is on the board',
+                title: 'One tap to someone on your board',
+                desc: 'If something serious comes up, you can reach anyone on your board in one tap. Call, text, or message. The board sits one step from the journal at all times. For teens, this is the trusted-adult board. For adults, it is your sponsor, your therapist, your closest friend, or whoever you put there.',
+                tag: 'You control who is on the board',
               },
               {
                 title: '988 and Crisis Text Line integrated',
@@ -293,18 +293,18 @@ export default function Home() {
                 tag: 'Always accessible, never pushed',
               },
               {
-                title: 'Parental consent required',
-                desc: 'The Founded Emerging app stays locked until a parent or guardian confirms setup by email. The app collects no personal data from the teen before that confirmation.',
-                tag: 'COPPA-aligned · email verification',
+                title: 'Age gate at first launch',
+                desc: 'The first screen asks for your age. Users 13–17 route to a parental consent flow. Users 18 and older confirm their age and proceed directly. The app stays locked until the right path completes for who you are.',
+                tag: 'COPPA-aligned for 13–17 · adult-direct for 18+',
               },
               {
                 title: 'Everything stays on the device',
-                desc: 'Journal entries, discharge notes, and board conversations stay on the phone. None of it leaves unless the teen actively shares it. The cloud never sees it.',
+                desc: 'Journal entries, discharge notes, and board conversations stay on the phone. None of it leaves unless you actively share it. The cloud never sees it. This holds whether you are 14, 24, or 54.',
                 tag: 'Local-only · no cloud by default',
               },
               {
                 title: 'Safe messaging standards',
-                desc: 'Every prompt in the app follows published safe messaging guidelines for adolescent mental health. We don\'t ask leading questions. We don\'t dramatize struggle. We don\'t require the teen to perform wellness.',
+                desc: 'Every prompt in the app follows published safe messaging guidelines for adolescent and adult mental health. The app does not ask leading questions. It does not dramatize struggle. It does not require you to perform wellness.',
                 tag: 'Reviewed against clinical guidelines',
               },
             ].map((item, i) => (
@@ -452,7 +452,7 @@ export default function Home() {
 
             <Reveal delay={200}>
               <div style={{ backgroundColor: '#0F1B1F', borderRadius: 10, padding: 36 }}>
-                <p style={{ color: '#D8AB69', fontSize: 10, fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase', marginBottom: 24 }}>What your child walks away with</p>
+                <p style={{ color: '#D8AB69', fontSize: 10, fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase', marginBottom: 24 }}>What the emerging walk away with</p>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
                   {[
                     { item: 'A written mission statement', note: 'theirs alone' },
@@ -482,10 +482,15 @@ export default function Home() {
       <section style={{ backgroundColor: '#0F1B1F', padding: '80px 24px' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 1, backgroundColor: 'rgba(216,171,105,0.08)' }}>
           {[
-            { group: 'Students ages 13–17', desc: 'Ready to take their life seriously without waiting for permission.' },
-            { group: 'Youth programs', desc: 'Organizations that already have young people\'s trust and want to give them something real.' },
-            { group: 'Educators', desc: 'Teachers and advisors who see what their students are capable of and want curriculum that matches it.' },
-            { group: 'Parents', desc: 'Watching their child carry weight alone. Ready to give them something more than advice.' },
+            { group: 'Students ages 13–17', desc: 'Ready to take their life seriously without waiting for permission. Parental consent required to set up.' },
+            { group: 'Young adults 18–26', desc: 'First responsible for your own decisions. Off the family insurance, signing your own leases, making medical and financial calls without backup.' },
+            { group: 'Anyone in early recovery', desc: 'Putting life back together piece by piece. The structure of a daily ritual and a board you can actually reach matters more than most apps will tell you.' },
+            { group: 'Anyone after a major transition', desc: 'Recently divorced. Newly widowed. Empty nested. Years spent living for others, and now needing language for your own life.' },
+            { group: 'Marginalized communities', desc: 'The governance tools institutions take for granted were never extended to people the system was built to exclude. The app puts the infrastructure directly in your hands. No gatekeeper required.' },
+            { group: 'Unhoused people', desc: 'Building a daily practice when the structure around you is unstable. The app runs on the device. The ritual moves with you, day to day, wherever the day finds you.' },
+            { group: 'Incarcerated and returning citizens', desc: 'Inside or after, the work of self-governance is yours to rebuild. Agency takes practice after a long stretch where someone else made every call. The walkthrough starts from the ground up.' },
+            { group: 'Youth programs and educators', desc: 'Organizations that already have young people\'s trust and want curriculum that matches what those young people are actually carrying.' },
+            { group: 'Parents (of 13–17 users)', desc: 'Watching your child carry weight alone. Ready to give them something more than advice, with the safety scaffolding to back it up.' },
           ].map((item, i) => (
             <Reveal key={item.group} delay={i * 60}>
               <div style={{ backgroundColor: '#0F1B1F', padding: '36px 28px' }}>
