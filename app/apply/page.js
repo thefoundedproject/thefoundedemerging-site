@@ -31,7 +31,7 @@ export default function Apply() {
         <div className="max-w-6xl mx-auto">
           <p style={{ color: '#D8AB69' }} className="text-sm font-semibold uppercase tracking-widest mb-4">Applications</p>
           <h1 className="text-white text-5xl font-light leading-tight mb-6">Apply to Founded Emerging</h1>
-          <p className="text-gray-300 text-lg max-w-2xl">Open to high school students, college students, fraternity/sorority chapters, HBCU programs, and youth organizations.</p>
+          <p className="text-gray-300 text-lg max-w-2xl">Open to anyone in the work of becoming. High school and college students. Young adults newly responsible for their own lives. People rebuilding in recovery. Adults re-emerging after a major transition. Educators, recovery programs, and youth organizations building cohorts.</p>
         </div>
       </section>
 
@@ -41,9 +41,11 @@ export default function Apply() {
             <div style={{ width: '60px', height: '2px', backgroundColor: '#D8AB69' }} className="mb-8" />
             <div className="space-y-6">
               {[
-                { label: 'Students (High School & College)', desc: 'Founded Emerging gives you the governance infrastructure to build your future with intention.' },
+                { label: 'Students (High School & College)', desc: 'Founded Emerging gives you the governance infrastructure to build your future on purpose, with a board you can actually consult.' },
+                { label: 'Young Adults (18–26)', desc: 'First responsible for your own decisions. The walkthrough was built for the moment the family insurance ends and the rental car needs your name.' },
+                { label: 'People Rebuilding (Recovery, Transition)', desc: 'Early recovery, a divorce, a stretch where someone else made every call. The daily ritual and the board are how agency comes back.' },
                 { label: 'Youth Organization Leaders', desc: 'Bring the Human Enterprise framework to your organization as a leadership and governance program.' },
-                { label: 'Institutional Partners (HBCUs & Youth Programs)', desc: 'Integrate Founded Emerging as a course, workshop series, or co-curricular offering.' },
+                { label: 'Institutional Partners (HBCUs, Recovery, Educators)', desc: 'Integrate Founded Emerging as a course, workshop series, recovery-aftercare module, or co-curricular offering.' },
               ].map((item) => (
                 <div key={item.label} className="border-l-2 pl-6" style={{ borderColor: '#D8AB69' }}>
                   <p style={{ color: '#0F1B1F' }} className="font-semibold mb-2">{item.label}</p>
@@ -76,10 +78,14 @@ export default function Apply() {
                     <option value="">Select one...</option>
                     <option>A student (high school)</option>
                     <option>A student (college)</option>
+                    <option>A young adult (18–26), on my own</option>
+                    <option>Someone in early recovery</option>
+                    <option>An adult re-emerging after a major life transition</option>
                     <option>A chapter or organization leader</option>
                     <option>A chapter leader (other Greek organization)</option>
                     <option>An educator or institutional partner</option>
                     <option>A youth organization</option>
+                    <option>A recovery program or treatment center</option>
                   </select>
                 </div>
                 <div>

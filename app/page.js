@@ -478,6 +478,70 @@ export default function Home() {
         </div>
       </section>
 
+      {/* FOR THE ADULT USER (18+, no guardian) — sibling to FOR PARENTS */}
+      <section id="adult-user" style={{ backgroundColor: '#0F1B1F', padding: '100px 24px' }}>
+        <div style={{ maxWidth: 1200, margin: '0 auto' }}>
+          <Reveal>
+            <p style={{ color: '#D8AB69', fontSize: 10, fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: 16 }}>For 18+ users</p>
+            <h2 style={{ color: '#F5F0E8', fontSize: 'clamp(26px, 4vw, 44px)', fontWeight: 300, letterSpacing: '-0.02em', lineHeight: 1.2, marginBottom: 40 }}>
+              You don&apos;t need permission.<br />You need a system.
+            </h2>
+          </Reveal>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 48, alignItems: 'start' }}>
+            <Reveal delay={100}>
+              <div>
+                <p style={{ color: 'rgba(245,240,232,0.75)', fontSize: 16, lineHeight: 1.75, marginBottom: 16 }}>
+                  You&apos;re responsible for your own decisions now. The lease is in your name. The doctor visit is yours to schedule. The hard conversation is yours to have. Nobody&apos;s deciding for you anymore.
+                </p>
+                <p style={{ color: 'rgba(245,240,232,0.75)', fontSize: 16, lineHeight: 1.75, marginBottom: 16 }}>
+                  The app gives you a daily practice and a board you can actually reach. A morning ritual that opens the day on purpose. An evening close that puts the day down. A way to make decisions with structure instead of in your head at 2 a.m.
+                </p>
+                <p style={{ color: 'rgba(245,240,232,0.75)', fontSize: 16, lineHeight: 1.75, marginBottom: 24 }}>
+                  It also fits anyone re-emerging into agency after a long stretch where someone else made the calls. Early recovery. A divorce. The end of a role you spent years inside. The walkthrough starts from the ground up because that&apos;s where the work is.
+                </p>
+
+                <div style={{ backgroundColor: 'rgba(245,240,232,0.05)', borderRadius: 8, padding: '24px 28px', marginBottom: 24, borderLeft: '3px solid #D8AB69' }}>
+                  <p style={{ color: '#D8AB69', fontSize: 10, fontWeight: 700, letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: 10 }}>How setup works for you</p>
+                  <p style={{ color: 'rgba(245,240,232,0.75)', fontSize: 14, lineHeight: 1.7, marginBottom: 0 }}>
+                    Download the app, confirm your age at the gate (18 or older), and you&apos;re in. No guardian involved. You agree to the Terms directly. Your journal stays on your phone. We never see it. You decide who&apos;s on your board.
+                  </p>
+                </div>
+
+                <p style={{ color: 'rgba(245,240,232,0.5)', fontSize: 13, lineHeight: 1.65 }}>
+                  If the on-device crisis detection surfaces something hard you&apos;re writing about, the app offers you direct paths to 988, the Crisis Text Line, or whoever you put on your board. Nothing is reported to anyone automatically. The same balance of safety and autonomy that protects the teens protects you too.
+                </p>
+              </div>
+            </Reveal>
+
+            <Reveal delay={200}>
+              <div style={{ backgroundColor: 'rgba(245,240,232,0.04)', borderRadius: 10, padding: 36, border: '1px solid rgba(216,171,105,0.15)' }}>
+                <p style={{ color: '#D8AB69', fontSize: 10, fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase', marginBottom: 24 }}>What you walk away with</p>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+                  {[
+                    { item: 'A written mission statement', note: 'yours alone' },
+                    { item: 'A real board of trusted people', note: 'sponsor, mentor, therapist, closest friend' },
+                    { item: 'A daily ritual you actually run', note: 'morning open, evening close' },
+                    { item: 'A structured way to make decisions', note: 'instead of looping at 2 a.m.' },
+                    { item: 'Language for what you carry', note: 'named clearly, not buried' },
+                    { item: 'A model for re-building community', note: 'a way to lean on others well' },
+                    { item: 'Crisis support, always one tap away', note: 'on-device, no reports out' },
+                  ].map(({ item, note }) => (
+                    <div key={item} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', borderBottom: '1px solid rgba(216,171,105,0.12)', paddingBottom: 12 }}>
+                      <p style={{ color: '#F5F0E8', fontSize: 14, fontWeight: 500 }}>{item}</p>
+                      <p style={{ color: 'rgba(216,171,105,0.55)', fontSize: 11, fontStyle: 'italic', textAlign: 'right', maxWidth: 140 }}>{note}</p>
+                    </div>
+                  ))}
+                </div>
+                <a href="#app" style={{ display: 'inline-block', marginTop: 24, color: '#D8AB69', fontSize: 13, fontWeight: 700, textDecoration: 'none', borderBottom: '1px solid rgba(216,171,105,0.4)', paddingBottom: 2 }}>
+                  Get the app →
+                </a>
+              </div>
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
       {/* WHO IT IS FOR */}
       <section style={{ backgroundColor: '#0F1B1F', padding: '80px 24px' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 1, backgroundColor: 'rgba(216,171,105,0.08)' }}>
