@@ -299,7 +299,7 @@ export default function Home() {
               },
               {
                 title: 'Everything stays on the device',
-                desc: 'Journal entries, discharge notes, and board conversations stay on the phone. None of it leaves unless you actively share it. The cloud never sees it. This holds whether you are 14, 24, or 54.',
+                desc: 'Journal entries, discharge notes, and board conversations stay on the phone. None of it leaves unless you actively share it. The cloud never sees it. The same rule applies whether you are 14, 24, or 54.',
                 tag: 'Local-only · no cloud by default',
               },
               {
@@ -416,7 +416,7 @@ export default function Home() {
           <Reveal>
             <p style={{ color: '#D8AB69', fontSize: 10, fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: 16 }}>For Parents</p>
             <h2 style={{ color: '#0F1B1F', fontSize: 'clamp(26px, 4vw, 44px)', fontWeight: 300, letterSpacing: '-0.02em', lineHeight: 1.2, marginBottom: 40 }}>
-              You can see it.<br />You just don&apos;t have the words for it yet.
+              Naming what your child is going through.
             </h2>
           </Reveal>
 
