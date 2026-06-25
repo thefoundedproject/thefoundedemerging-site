@@ -60,7 +60,7 @@ export default function ProgramPage() {
             <li><b>Who am I building?</b> Mission, values, and the version of yourself you are working toward.</li>
             <li><b>What do I actually own?</b> Your six capitals. What you have, what needs care, what gets protected.</li>
             <li><b>Build your board.</b> The people who tell you the truth. How to find them, how to ask them in, how to use them.</li>
-            <li><b>What did your body learn?</b> The patterns you carry from before you could name them. Working with what already lives in the body.</li>
+            <li><b>What did your body learn?</b> The patterns running in the body from before you could name them. Working with what already lives in the body.</li>
             <li><b>Who owns your digital self?</b> The version of you that lives online, and the work of taking it back.</li>
             <li><b>You can&apos;t build alone.</b> The community architecture that makes the rest of the work sustainable.</li>
           </ul>
@@ -71,7 +71,7 @@ export default function ProgramPage() {
             The first module begins with a structured intake: three questions, an honest look, a written profile. The work that follows is built on what you bring. There&apos;s no &quot;right&quot; place to start. The intake meets you where you actually are.
           </p>
           <p>
-            Module 1 is also the on-ramp for the cohort itself. People who complete the intake get matched with a peer pair. The pair holds the daily check-in across the full six months.
+            Module 1 is also the on-ramp for the cohort itself. People who complete the intake get matched with a peer pair. The pair runs the daily check-in across the full six months.
           </p>
         </Section>
 

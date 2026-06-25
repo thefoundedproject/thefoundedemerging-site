@@ -27,9 +27,9 @@ const QUIZ = [
     q: 'Right now, what is most true?',
     options: [
       { label: 'I know what I want. I just don\'t know how to organize around it.', value: 'goals' },
-      { label: 'I\'m making decisions that matter and I\'m making them mostly alone.', value: 'isolated' },
+      { label: 'I\'m making big decisions and I\'m making them mostly alone.', value: 'isolated' },
       { label: 'I spend a lot of energy being who people expect me to be.', value: 'performing' },
-      { label: 'I\'m carrying something heavy that most people around me can\'t see.', value: 'carrying' },
+      { label: 'I\'m living with something heavy that most people around me can\'t see.', value: 'carrying' },
     ],
   },
   {
@@ -65,12 +65,12 @@ const PROFILES = {
   },
   performing: {
     title: 'You\'re spending energy on the wrong thing.',
-    desc: 'When you have a clear mission and people who actually know you, the pressure to be everything for everyone starts to lift. You start building for yourself.',
+    desc: 'When you have a clear mission and people who actually know you, the demand to be everything for everyone starts to ease. You start building for yourself.',
     next: 'Start with Module 01: Who Am I Building?',
   },
   carrying: {
-    title: 'You\'re carrying more than most people your age.',
-    desc: 'This program doesn\'t minimize that. It asks: given what you carry, what does your life need to look like? And who should be in your corner while you carry it?',
+    title: 'You\'re living with more than most people your age.',
+    desc: 'This program doesn\'t minimize that. It asks: given everything you\'re living with, what does your life need to look like? And who should be in your corner while you face it?',
     next: 'Start where you are. Module 01 or Module 04.',
   },
   language: {
@@ -236,7 +236,7 @@ export default function Home() {
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 2, backgroundColor: 'rgba(216,171,105,0.08)', marginBottom: 60 }}>
             {[
-              { icon: '◎', title: 'Morning Check-In', desc: 'Start the day grounded. Two minutes. What matters today, how your body feels, one intention.' },
+              { icon: '◎', title: 'Morning Check-In', desc: 'Start the day grounded. Two minutes. Your focus for the day, how your body feels, one intention.' },
               { icon: '●', title: 'Evening Wind-Down', desc: 'Close the day intentionally. Put down what happened. Discharge what needs to go. Set up tomorrow.' },
               { icon: '◈', title: 'Private Journal', desc: 'Everything you write stays on your device. The cloud never sees it. Your journal is yours alone.' },
               { icon: '◐', title: 'Your Board', desc: 'The adults you actually trust. You add them. You reach them in one tap when you need them.' },
@@ -424,7 +424,7 @@ export default function Home() {
             <Reveal delay={100}>
               <div>
                 <p style={{ color: '#0F1B1F', fontSize: 16, lineHeight: 1.75, marginBottom: 16 }}>
-                  Your child is going through significant changes, internally and in relation to the world around them. You see it. The stress. The social pressure. The decisions they&apos;re making mostly alone.
+                  Your child is going through significant changes, internally and in relation to the world around them. You see it. The stress. The social strain. The decisions they&apos;re making mostly alone.
                 </p>
                 <p style={{ color: '#0F1B1F', fontSize: 16, lineHeight: 1.75, marginBottom: 16 }}>
                   A clinician built this program after two decades working with young people. It reduces the mental and emotional load of growing up. It gives them language for what they&apos;re going through and a structure for the decisions they&apos;re already making.
@@ -458,7 +458,7 @@ export default function Home() {
                     { item: 'A written mission statement', note: 'theirs alone' },
                     { item: 'A map of their six capitals', note: 'what they have and what needs care' },
                     { item: 'A real advisory board', note: 'people who tell them the truth' },
-                    { item: 'Language for what they carry', note: 'named clearly' },
+                    { item: 'Language for what they\'re living with', note: 'named clearly' },
                     { item: 'Digital self-awareness', note: 'who shapes their identity online' },
                     { item: 'A model for community', note: 'a way to lean on others well' },
                     { item: 'Crisis support, always one tap away', note: 'works without you needing to know first' },
@@ -523,7 +523,7 @@ export default function Home() {
                     { item: 'A real board of trusted people', note: 'sponsor, mentor, therapist, closest friend' },
                     { item: 'A daily ritual you actually run', note: 'morning open, evening close' },
                     { item: 'A structured way to make decisions', note: 'instead of looping at 2 a.m.' },
-                    { item: 'Language for what you carry', note: 'named clearly, not buried' },
+                    { item: 'Language for what you\'re living with', note: 'named clearly, not buried' },
                     { item: 'A model for re-building community', note: 'a way to lean on others well' },
                     { item: 'Crisis support, always one tap away', note: 'on-device, no reports out' },
                   ].map(({ item, note }) => (
@@ -553,8 +553,8 @@ export default function Home() {
             { group: 'Marginalized communities', desc: 'The governance tools institutions take for granted were never extended to people the system was built to exclude. The app puts the infrastructure directly in your hands. No gatekeeper required.' },
             { group: 'Unhoused people', desc: 'Building a daily practice when the structure around you is unstable. The app runs on the device. The ritual moves with you, day to day, wherever the day finds you.' },
             { group: 'Incarcerated and returning citizens', desc: 'Inside or after, the work of self-governance is yours to rebuild. Agency takes practice after a long stretch where someone else made every call. The walkthrough starts from the ground up.' },
-            { group: 'Youth programs and educators', desc: 'Organizations that already have young people\'s trust and want curriculum that matches what those young people are actually carrying.' },
-            { group: 'Parents (of 13–17 users)', desc: 'Watching your child carry weight alone. Ready to give them something more than advice, with the safety scaffolding to back it up.' },
+            { group: 'Youth programs and educators', desc: 'Organizations that already have young people\'s trust and want curriculum that matches what those young people are actually living with.' },
+            { group: 'Parents (of 13–17 users)', desc: 'Watching your child handle it alone. Ready to give them something more than advice, with the safety scaffolding to back it up.' },
           ].map((item, i) => (
             <Reveal key={item.group} delay={i * 60}>
               <div style={{ backgroundColor: '#0F1B1F', padding: '36px 28px' }}>
