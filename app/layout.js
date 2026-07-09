@@ -64,7 +64,7 @@ function Footer() {
           </div>
         </div>
         <div className="border-t border-gray-800 pt-8">
-          <p className="text-xs">© 2026 The Founded Project · Dr. Stephen Thompson, DC, DACM, FAIHM. All rights reserved.</p>
+          <p className="text-xs">© 2026 The Founded Project · Dr. Stephen Thompson. All rights reserved.</p>
         </div>
       </div>
     </footer>

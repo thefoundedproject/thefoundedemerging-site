@@ -323,7 +323,7 @@ export default function Home() {
               <p style={{ color: '#F5F0E8', fontSize: 16, lineHeight: 1.65, marginBottom: 0 }}>
                 &ldquo;A clinician built this app after two decades with young people in crisis. The safety features are the reason it exists.&rdquo;
               </p>
-              <p style={{ color: 'rgba(216,171,105,0.65)', fontSize: 12, marginTop: 12, fontWeight: 600, letterSpacing: '0.05em' }}>DR. STEPHEN THOMPSON DC, DACM, BCTMB, FAIHM · FOUNDER</p>
+              <p style={{ color: 'rgba(216,171,105,0.65)', fontSize: 12, marginTop: 12, fontWeight: 600, letterSpacing: '0.05em' }}>DR. STEPHEN THOMPSON · FOUNDER</p>
             </div>
           </Reveal>
         </div>

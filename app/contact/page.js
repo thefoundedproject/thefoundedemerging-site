@@ -82,7 +82,7 @@ export default function ContactPage() {
 
         <Section title="About the builder">
           <p style={{ color: 'rgba(15,27,31,0.6)' }} className="italic">
-            Dr. Stephen Thompson, DC, DACM, BCTMB, FAIHM<br />
+            Dr. Stephen Thompson<br />
             Founder, The Founded Project
           </p>
         </Section>

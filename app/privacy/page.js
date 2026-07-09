@@ -216,7 +216,7 @@ export default function PrivacyPage() {
             </a>
           </p>
           <p style={{ color: 'rgba(15,27,31,0.5)' }} className="text-sm italic mt-6">
-            Dr. Stephen Thompson, DC, DACM, BCTMB, FAIHM<br />
+            Dr. Stephen Thompson<br />
             The Founded Project
           </p>
         </Section>

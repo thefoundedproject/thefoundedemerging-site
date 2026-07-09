@@ -99,7 +99,7 @@ export default function ProgramPage() {
         </Section>
 
         <p style={{ color: 'rgba(15,27,31,0.5)' }} className="text-sm italic mt-12">
-          Dr. Stephen Thompson, DC, DACM, BCTMB, FAIHM<br />
+          Dr. Stephen Thompson<br />
           The Founded Project
         </p>
       </article>

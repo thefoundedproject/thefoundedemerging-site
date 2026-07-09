@@ -61,7 +61,7 @@ export async function POST(request) {
             <div style="border-top:1px solid rgba(216,171,105,0.2);padding-top:20px;margin-top:8px;">
               <p style="font-size:13px;color:rgba(245,240,232,0.45);line-height:1.6;margin:0;">
                 Founded Emerging · Ages 13–17 · thefoundedemerging.app<br/>
-                Built by Dr. Stephen Thompson DC, DACM, BCTMB, FAIHM<br/>
+                Built by Dr. Stephen Thompson<br/>
                 If you didn\'t set up this app, please contact us at contact@thefoundedemerging.app
               </p>
             </div>
