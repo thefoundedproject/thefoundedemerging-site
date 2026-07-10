@@ -1,4 +1,9 @@
 import './globals.css'
+import Script from 'next/script'
+
+// William — the Founded Emerging concierge. Served by the isolated concierge
+// service; safety-aware (drops cheer for crisis topics, points to 988/trusted adult).
+const CONCIERGE_URL = 'https://rhetoricalpoints-production-4da4.up.railway.app'
 
 export const metadata = {
   title: 'Founded Emerging | Governance of Self Before Governance of the World',
@@ -78,6 +83,10 @@ export default function RootLayout({ children }) {
         <Nav />
         <main className="pt-16">{children}</main>
         <Footer />
+        <Script id="rpc-config" strategy="beforeInteractive">
+          {`window.RP_CONCIERGE={site:'foundedemerging',api:'${CONCIERGE_URL}',name:'William',accent:'#D8AB69'}`}
+        </Script>
+        <Script src={`${CONCIERGE_URL}/widget.js`} strategy="afterInteractive" />
       </body>
     </html>
   )
