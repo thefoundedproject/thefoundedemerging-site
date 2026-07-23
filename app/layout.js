@@ -23,7 +23,7 @@ function Nav() {
       <div className="max-w-6xl mx-auto flex items-center justify-between">
         <a href="/" className="flex items-center gap-2.5 text-white font-semibold text-lg tracking-wide">
           <img src="/brand/logo_mark_emerging_gold.png" alt="" className="h-8 w-auto" />
-          <span style={{ fontFamily: 'Fraunces, Georgia, serif' }}>Founded <span style={{ color: '#E0A45B' }}>Emerging</span></span>
+          <span style={{ fontFamily: 'Newsreader, Georgia, serif' }}>Founded <span style={{ color: '#E0A45B' }}>Emerging</span></span>
         </a>
         <div className="hidden md:flex items-center gap-8">
           <a href="/program" className="text-gray-300 hover:text-white text-sm transition-colors">The Program</a>
@@ -50,7 +50,7 @@ function Footer() {
           <div>
             <div className="flex items-center gap-2.5 mb-3">
               <img src="/brand/logo_mark_emerging_gold.png" alt="" className="h-9 w-auto" />
-              <span className="text-white font-semibold text-lg" style={{ fontFamily: 'Fraunces, Georgia, serif' }}>Founded <span style={{ color: '#E0A45B' }}>Emerging</span></span>
+              <span className="text-white font-semibold text-lg" style={{ fontFamily: 'Newsreader, Georgia, serif' }}>Founded <span style={{ color: '#E0A45B' }}>Emerging</span></span>
             </div>
             <p className="text-sm leading-relaxed">Governance of self before governance of the world.</p>
             <div style={{ width: '40px', height: '2px', backgroundColor: '#E0A45B' }} className="mt-4" />
