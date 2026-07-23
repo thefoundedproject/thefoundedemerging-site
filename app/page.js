@@ -217,7 +217,7 @@ export default function Home() {
             </p>
           </div>
           <div style={{ marginTop: 52, display: 'flex', gap: 16, flexWrap: 'wrap', opacity: heroVisible ? 1 : 0, transition: 'opacity 1.4s ease 1.5s' }}>
-            <a href="#app" style={{ backgroundColor: '#E0A45B', color: '#17110B', padding: '16px 36px', borderRadius: 6, fontSize: 14, fontWeight: 700, textDecoration: 'none' }}>Get the app</a>
+            <a href="#app" style={{ backgroundColor: '#E0A45B', color: '#17110B', padding: '16px 36px', borderRadius: 6, fontSize: 14, fontWeight: 700, textDecoration: 'none' }}>See the app</a>
             <a href="/apply" style={{ backgroundColor: 'transparent', color: 'rgba(245,240,232,0.65)', padding: '16px 36px', borderRadius: 6, fontSize: 14, fontWeight: 600, textDecoration: 'none', border: '1px solid rgba(245,240,232,0.18)' }}>Apply to the cohort program</a>
             <a href="#parents" style={{ backgroundColor: 'transparent', color: 'rgba(245,240,232,0.45)', padding: '16px 36px', borderRadius: 6, fontSize: 14, fontWeight: 600, textDecoration: 'none', border: '1px solid rgba(245,240,232,0.12)' }}>13–17: parents read this first</a>
           </div>
@@ -258,7 +258,7 @@ export default function Home() {
 
           <Reveal delay={200}>
             <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap' }}>
-              <a href="https://apps.apple.com/app/founded-emerging" style={{ backgroundColor: '#D8AB69', color: '#0F1B1F', padding: '14px 32px', borderRadius: 6, fontWeight: 700, fontSize: 14, textDecoration: 'none' }}>Download on iOS</a>
+              <span style={{ display: 'inline-flex', alignItems: 'center', gap: 8, backgroundColor: 'rgba(224,164,91,0.12)', color: '#E0A45B', padding: '14px 32px', borderRadius: 6, fontWeight: 700, fontSize: 14, border: '1px solid rgba(224,164,91,0.4)' }}>Coming to the App Store</span>
               <a href="#parents" style={{ backgroundColor: 'transparent', color: 'rgba(245,240,232,0.6)', padding: '14px 32px', borderRadius: 6, fontWeight: 600, fontSize: 14, textDecoration: 'none', border: '1px solid rgba(245,240,232,0.15)' }}>Requires guardian setup</a>
             </div>
           </Reveal>
