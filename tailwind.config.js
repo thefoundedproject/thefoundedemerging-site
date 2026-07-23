@@ -18,7 +18,11 @@ module.exports = {
           light: '#E8C88A',
           dark: '#B8894A',
         },
-        cream: '#F5F0E8',
+        // Warm-dark documentary palette ("Grounded & Human"), shared across the ecosystem.
+        espresso: '#17110B',
+        cocoa: '#241A11',
+        ember: '#E0A45B',
+        cream: '#EDE6D8',   // warm stone (was #F5F0E8)
         offwhite: '#FAFAF7',
       },
       fontFamily: {
