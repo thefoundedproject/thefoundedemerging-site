@@ -186,20 +186,23 @@ export default function Home() {
   return (
     <>
       {/* HERO */}
-      <section style={{ backgroundColor: '#0F1B1F', minHeight: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: '80px 24px', position: 'relative', overflow: 'hidden' }}>
-        <div style={{ position: 'absolute', top: 0, right: 0, width: '40%', height: '100%', background: 'linear-gradient(to left, rgba(216,171,105,0.04), transparent)', pointerEvents: 'none' }} />
-        <div style={{ maxWidth: 1200, margin: '0 auto', width: '100%' }}>
-          <p style={{ color: '#D8AB69', fontSize: 10, fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: 60, opacity: heroVisible ? 1 : 0, transition: 'opacity 0.8s 200ms' }}>
+      <section style={{ backgroundColor: '#17110B', minHeight: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: '80px 24px', position: 'relative', overflow: 'hidden' }}>
+        {/* Full-bleed firelit portrait — a young person in the work of becoming. */}
+        <img src="/people/becoming.jpg" alt="" className="warm-tone" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'right center', pointerEvents: 'none' }} />
+        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to right, #17110B, rgba(23,17,11,0.86) 42%, rgba(23,17,11,0.12))', pointerEvents: 'none' }} />
+        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, #17110B, rgba(23,17,11,0.12) 45%, rgba(23,17,11,0.38))', pointerEvents: 'none' }} />
+        <div style={{ maxWidth: 1200, margin: '0 auto', width: '100%', position: 'relative', zIndex: 1 }}>
+          <p style={{ color: '#E0A45B', fontSize: 10, fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: 60, opacity: heroVisible ? 1 : 0, transition: 'opacity 0.8s 200ms' }}>
             Founded Emerging · For Anyone Becoming · Ages 13–26 and beyond
           </p>
           <div style={{ maxWidth: 820 }}>
             {[
               'You\'re learning to',
-              <span key="2" style={{ color: '#D8AB69' }}>govern your own life.</span>,
+              <span key="2" style={{ color: '#E0A45B' }}>govern your own life.</span>,
               'Here\'s the walkthrough.',
             ].map((line, i) => (
               <div key={i} style={{ overflow: 'hidden' }}>
-                <div style={{ opacity: heroVisible ? 1 : 0, transform: heroVisible ? 'none' : 'translateY(100%)', transition: `all 0.9s ease ${380 + i * 140}ms`, fontSize: 'clamp(40px, 7vw, 88px)', fontWeight: 300, color: '#F5F0E8', lineHeight: 1.08, letterSpacing: '-0.025em' }}>
+                <div style={{ opacity: heroVisible ? 1 : 0, transform: heroVisible ? 'none' : 'translateY(100%)', transition: `all 0.9s ease ${380 + i * 140}ms`, fontFamily: 'Newsreader, Georgia, serif', fontSize: 'clamp(40px, 7vw, 90px)', fontWeight: 300, color: '#EDE6D8', lineHeight: 1.05, letterSpacing: '-0.02em' }}>
                   {line}
                 </div>
               </div>
@@ -214,7 +217,7 @@ export default function Home() {
             </p>
           </div>
           <div style={{ marginTop: 52, display: 'flex', gap: 16, flexWrap: 'wrap', opacity: heroVisible ? 1 : 0, transition: 'opacity 1.4s ease 1.5s' }}>
-            <a href="#app" style={{ backgroundColor: '#D8AB69', color: '#0F1B1F', padding: '16px 36px', borderRadius: 6, fontSize: 14, fontWeight: 700, textDecoration: 'none' }}>Get the app</a>
+            <a href="#app" style={{ backgroundColor: '#E0A45B', color: '#17110B', padding: '16px 36px', borderRadius: 6, fontSize: 14, fontWeight: 700, textDecoration: 'none' }}>Get the app</a>
             <a href="/apply" style={{ backgroundColor: 'transparent', color: 'rgba(245,240,232,0.65)', padding: '16px 36px', borderRadius: 6, fontSize: 14, fontWeight: 600, textDecoration: 'none', border: '1px solid rgba(245,240,232,0.18)' }}>Apply to the cohort program</a>
             <a href="#parents" style={{ backgroundColor: 'transparent', color: 'rgba(245,240,232,0.45)', padding: '16px 36px', borderRadius: 6, fontSize: 14, fontWeight: 600, textDecoration: 'none', border: '1px solid rgba(245,240,232,0.12)' }}>13–17: parents read this first</a>
           </div>
