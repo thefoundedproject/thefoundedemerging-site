@@ -365,10 +365,10 @@ export default function Home() {
       </section>
 
       {/* SIX MODULES */}
-      <section style={{ backgroundColor: '#0F1B1F', padding: '100px 24px' }}>
+      <section style={{ backgroundColor: '#17110B', padding: '100px 24px' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto' }}>
           <Reveal>
-            <p style={{ color: '#D8AB69', fontSize: 10, fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: 16 }}>The Program</p>
+            <p style={{ color: '#E0A45B', fontSize: 10, fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: 16 }}>The Program</p>
             <h2 style={{ color: '#F5F0E8', fontSize: 'clamp(26px, 4vw, 48px)', fontWeight: 300, letterSpacing: '-0.02em', marginBottom: 60 }}>Six modules. About six months. One arc.</h2>
           </Reveal>
           {[
@@ -380,10 +380,12 @@ export default function Home() {
             { num: '06', title: 'You Can\'t Build Alone', desc: 'The strongest people have organized, honest community around them. This module builds that community for you.' },
           ].map((mod, i) => (
             <Reveal key={mod.num} delay={i * 55}>
-              <div style={{ borderTop: '1px solid rgba(216,171,105,0.12)', padding: '28px 0', display: 'grid', gridTemplateColumns: '50px 220px 1fr', gap: 20, alignItems: 'start' }}>
-                <span style={{ color: 'rgba(216,171,105,0.3)', fontSize: 12, fontWeight: 700, paddingTop: 3 }}>{mod.num}</span>
-                <p style={{ color: '#F5F0E8', fontSize: 15, fontWeight: 600, lineHeight: 1.35 }}>{mod.title}</p>
-                <p style={{ color: 'rgba(245,240,232,0.5)', fontSize: 14, lineHeight: 1.65 }}>{mod.desc}</p>
+              <div style={{ borderTop: '1px solid rgba(224,164,91,0.14)', padding: '28px 0', display: 'grid', gridTemplateColumns: '46px 1fr', gap: 18, alignItems: 'start' }}>
+                <span style={{ color: 'rgba(224,164,91,0.45)', fontSize: 13, fontWeight: 700, paddingTop: 6 }}>{mod.num}</span>
+                <div>
+                  <p style={{ color: '#EDE6D8', fontSize: 19, fontWeight: 500, lineHeight: 1.25, marginBottom: 8, fontFamily: 'Newsreader, Georgia, serif' }}>{mod.title}</p>
+                  <p style={{ color: 'rgba(237,230,216,0.55)', fontSize: 14, lineHeight: 1.65, maxWidth: 640 }}>{mod.desc}</p>
+                </div>
               </div>
             </Reveal>
           ))}
