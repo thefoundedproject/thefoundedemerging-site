@@ -258,7 +258,7 @@ export default function Home() {
 
           <Reveal delay={200}>
             <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap' }}>
-              <span style={{ display: 'inline-flex', alignItems: 'center', gap: 8, backgroundColor: 'rgba(224,164,91,0.12)', color: '#E0A45B', padding: '14px 32px', borderRadius: 6, fontWeight: 700, fontSize: 14, border: '1px solid rgba(224,164,91,0.4)' }}>Coming to the App Store</span>
+              <a href="https://apps.apple.com/us/app/emerging/id6786498515" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, backgroundColor: '#E0A45B', color: '#17110B', padding: '14px 32px', borderRadius: 6, fontWeight: 700, fontSize: 14, textDecoration: 'none' }}>Download on the App Store →</a>
               <a href="#parents" style={{ backgroundColor: 'transparent', color: 'rgba(245,240,232,0.6)', padding: '14px 32px', borderRadius: 6, fontWeight: 600, fontSize: 14, textDecoration: 'none', border: '1px solid rgba(245,240,232,0.15)' }}>Requires guardian setup</a>
             </div>
           </Reveal>
