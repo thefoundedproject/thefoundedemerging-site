@@ -6,6 +6,9 @@ import Script from 'next/script'
 const CONCIERGE_URL = 'https://rhetoricalpoints-production-4da4.up.railway.app'
 
 export const metadata = {
+  // iOS Smart App Banner: Safari on iPhone shows Apple's own Open/Get bar for
+  // the App Store listing. Mobile-first routing starts here.
+  itunes: { appId: '6786498515' },
   title: 'Founded Emerging | Governance of Self Before Governance of the World',
   description: 'Founded Emerging is the youth arm of The Founded Project. Human Enterprise Theory applied to emerging adults. The governance framework for young people building serious lives.',
   keywords: 'Founded Emerging, youth leadership, emerging adult governance, Human Enterprise Theory, youth development, personal governance, student leadership',
