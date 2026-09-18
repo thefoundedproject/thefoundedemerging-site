@@ -48,7 +48,7 @@ export default function ContactPage() {
           </p>
         </Section>
 
-        <Section title="Parental consent — revoke or ask a question">
+        <Section title="Parental consent: revoke or ask a question">
           <p>
             Guardians can revoke consent any time by emailing the address above with the subject line &quot;Revoke consent&quot; and the email used during the consent flow. We confirm receipt and mark the guardian record for deletion within 30 days. Questions about how the parental consent flow works are welcome at the same address.
           </p>
@@ -68,21 +68,21 @@ export default function ContactPage() {
 
         <Section title="Press, partnerships, speaking">
           <p>
-            For interviews, partnership inquiries, or speaking requests for Dr. Stephen Thompson, use the same email with &quot;Press&quot; or &quot;Partnership&quot; in the subject line.
+            For interviews, partnership inquiries, or speaking requests for Stephen Thompson, use the same email with &quot;Press&quot; or &quot;Partnership&quot; in the subject line.
           </p>
         </Section>
 
         <Section title="Mailing address">
           <p style={{ color: 'rgba(15,27,31,0.6)' }}>
             The Founded Project<br />
-            c/o Dr. Stephen Thompson<br />
+            c/o Stephen Thompson<br />
             Minneapolis, MN, USA
           </p>
         </Section>
 
         <Section title="About the builder">
           <p style={{ color: 'rgba(15,27,31,0.6)' }} className="italic">
-            Dr. Stephen Thompson<br />
+            Stephen Thompson<br />
             Founder, The Founded Project
           </p>
         </Section>

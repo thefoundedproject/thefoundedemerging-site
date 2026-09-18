@@ -47,7 +47,7 @@ export default function TermsPage() {
 
         <Section title="What this is">
           <p>
-            Founded Emerging is a personal-governance and reflection app built for the work of becoming an agentic human. It supports daily writing, evening reflection, decision-making practice, and the development of self-governance skills drawn from Human Enterprise Theory by Dr. Stephen Thompson. The primary audience is ages 13–26, with the app also welcoming anyone older who is learning self-governance for the first time or rebuilding it after a major life transition.
+            Founded Emerging is a personal-governance and reflection app built for the work of becoming an agentic human. It supports daily writing, evening reflection, decision-making practice, and the development of self-governance skills drawn from Human Enterprise Theory by Stephen Thompson. The primary audience is ages 13–26, with the app also welcoming anyone older who is learning self-governance for the first time or rebuilding it after a major life transition.
           </p>
           <p>
             Using Founded Emerging means you agree to these terms. If you are 13–17, your parent or legal guardian agrees on your behalf by completing the parental consent flow inside the app. If you are 18 or older, you agree directly when you confirm your age at the start of setup.
@@ -123,7 +123,7 @@ export default function TermsPage() {
             <li>The system does not replace the judgment of a clinician, sponsor, or trusted person who knows you in person.</li>
             <li>Emergency situations require emergency services. The app surfaces 988 and the Crisis Text Line, but you have to use them. In immediate physical danger, call 911.</li>
             <li>For users 13–17: if the guardian has concerns about the user&apos;s safety, they should engage in person, with professional support as needed. The app is one input, not the answer.</li>
-            <li>For users 18 and older: the same applies in reverse. People on your board, your clinician, your sponsor, your closest friend — the app does not replace any of them. The app is the daily structure that the rest of your support gets to act on.</li>
+            <li>For users 18 and older: the same applies in reverse. People on your board, your clinician, your sponsor, your closest friend. The app does not replace any of them. The app is the daily structure that the rest of your support gets to act on.</li>
           </ul>
         </Section>
 
@@ -150,7 +150,7 @@ export default function TermsPage() {
 
         <Section title="Intellectual property">
           <p>
-            Human Enterprise Theory, Founded Emerging, Thompson Coaching Method, P/AIRS Bodywork, and all associated frameworks, content, code, and educational materials are the intellectual property of Dr. Stephen Thompson and The Founded Project. Patent pending. Reproducing, repackaging, or republishing this content without written permission is not permitted.
+            Human Enterprise Theory, Founded Emerging, Thompson Coaching Method, P/AIRS Bodywork, and all associated frameworks, content, code, and educational materials are the intellectual property of Stephen Thompson and The Founded Project. Patent pending. Reproducing, repackaging, or republishing this content without written permission is not permitted.
           </p>
         </Section>
 
@@ -162,7 +162,7 @@ export default function TermsPage() {
 
         <Section title="Limitation of liability">
           <p>
-            To the maximum extent allowed by law, The Founded Project and Dr. Stephen Thompson are not liable for indirect, incidental, or consequential damages arising from the use of Founded Emerging, including any outcomes related to the user&apos;s mental health, recovery, relationships, financial decisions, or actions taken or not taken in response to app content. Total direct liability is limited to the amount paid for the app in the 12 months before any claim, which during the current launch period is zero.
+            To the maximum extent allowed by law, The Founded Project and Stephen Thompson are not liable for indirect, incidental, or consequential damages arising from the use of Founded Emerging, including any outcomes related to the user&apos;s mental health, recovery, relationships, financial decisions, or actions taken or not taken in response to app content. Total direct liability is limited to the amount paid for the app in the 12 months before any claim, which during the current launch period is zero.
           </p>
           <p>
             This limitation does not apply to liability that cannot be limited by applicable law, including in cases of gross negligence or willful misconduct.
@@ -199,7 +199,7 @@ export default function TermsPage() {
             </a>
           </p>
           <p style={{ color: 'rgba(15,27,31,0.5)' }} className="text-sm italic mt-6">
-            Dr. Stephen Thompson<br />
+            Stephen Thompson<br />
             The Founded Project
           </p>
         </Section>

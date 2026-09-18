@@ -68,7 +68,7 @@ export default function PrivacyPage() {
           <ul>
             <li>The teenager learning self-governance for the first time, with a parent or guardian alongside.</li>
             <li>The young adult who has just become responsible for their own decisions (off the family insurance, signing their own leases, making medical and financial calls without backup).</li>
-            <li>The adult rebuilding agency after a major transition — early recovery, a divorce, an empty nest, a long stretch of living for someone else and now needing language for their own life.</li>
+            <li>The adult rebuilding agency after a major transition: early recovery, a divorce, an empty nest, a long stretch of living for someone else and now needing language for their own life.</li>
           </ul>
           <p>
             Children under 13 should not use Founded Emerging. The app is not designed for that age group and we do not knowingly collect any data from children under 13.
@@ -141,7 +141,7 @@ export default function PrivacyPage() {
             When the system detects concerning patterns, the app gently surfaces resources: the option to text or call someone on your board, the 988 Suicide and Crisis Lifeline, and the Crisis Text Line. You decide whether to use these resources. The system does not automatically notify a guardian, a board member, or any external party.
           </p>
           <p>
-            This design honors your autonomy while keeping immediate help one tap away. The system is not a substitute for professional mental health care or emergency services. If you or someone near you is in immediate danger, call 911 or go to the nearest emergency room.
+            This design leaves the choice with you and keeps immediate help one tap away. The system is not a substitute for professional mental health care or emergency services. If you or someone near you is in immediate danger, call 911 or go to the nearest emergency room.
           </p>
         </Section>
 
@@ -216,7 +216,7 @@ export default function PrivacyPage() {
             </a>
           </p>
           <p style={{ color: 'rgba(15,27,31,0.5)' }} className="text-sm italic mt-6">
-            Dr. Stephen Thompson<br />
+            Stephen Thompson<br />
             The Founded Project
           </p>
         </Section>

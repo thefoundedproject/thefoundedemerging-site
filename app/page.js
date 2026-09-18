@@ -326,7 +326,7 @@ export default function Home() {
               <p style={{ color: '#F5F0E8', fontSize: 16, lineHeight: 1.65, marginBottom: 0 }}>
                 &ldquo;A clinician built this app after two decades with young people in crisis. The safety features are the reason it exists.&rdquo;
               </p>
-              <p style={{ color: 'rgba(216,171,105,0.65)', fontSize: 12, marginTop: 12, fontWeight: 600, letterSpacing: '0.05em' }}>DR. STEPHEN THOMPSON · FOUNDER</p>
+              <p style={{ color: 'rgba(216,171,105,0.65)', fontSize: 12, marginTop: 12, fontWeight: 600, letterSpacing: '0.05em' }}>STEPHEN THOMPSON · FOUNDER</p>
             </div>
           </Reveal>
         </div>
@@ -375,9 +375,9 @@ export default function Home() {
             { num: '01', title: 'Who Am I Building?', desc: 'Before you build anything, you need to know what you\'re building. Your mission. Your values. What actually matters to you.' },
             { num: '02', title: 'What Do You Actually Own?', desc: 'Health. Time. Relationships. Reputation. Ideas. Money. You have more than you think. This maps what you already own and what needs protecting.' },
             { num: '03', title: 'Build Your Board', desc: 'You need more than people who love you. You need people who will tell you the truth. This module shows you how to identify them, ask them in, and use their counsel.' },
-            { num: '04', title: 'What Did Your Body Learn?', desc: 'You learned how to move fast, keep things inside, and take care of everyone else first. This module names those patterns and asks which ones still work for you.' },
+            { num: '04', title: 'What Did Your Body Learn?', desc: 'You learned how to move fast, keep things inside, and take care of everyone else first. This module identifies those patterns and asks which ones still work for you.' },
             { num: '05', title: 'Who Owns Your Digital Self?', desc: 'You\'re building your identity online right now. Every post. Every platform. Every click. This module puts you in charge of that.' },
-            { num: '06', title: 'You Can\'t Build Alone', desc: 'The strongest people have organized, honest community around them. This module builds that community for you.' },
+            { num: '06', title: 'You Can\'t Build Alone', desc: 'The strongest people have an organized community around them. This module builds that community for you.' },
           ].map((mod, i) => (
             <Reveal key={mod.num} delay={i * 55}>
               <div style={{ borderTop: '1px solid rgba(224,164,91,0.14)', padding: '28px 0', display: 'grid', gridTemplateColumns: '46px 1fr', gap: 18, alignItems: 'start' }}>
@@ -398,7 +398,7 @@ export default function Home() {
           <Reveal>
             <p style={{ color: '#D8AB69', fontSize: 10, fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: 20 }}>Where Do You Start?</p>
             <h2 style={{ color: '#F5F0E8', fontSize: 'clamp(22px, 3.5vw, 38px)', fontWeight: 300, lineHeight: 1.2, marginBottom: 20, letterSpacing: '-0.015em' }}>
-              Three honest questions. One honest answer.
+              Three questions. One straight answer.
             </h2>
             <p style={{ color: 'rgba(245,240,232,0.5)', fontSize: 15, lineHeight: 1.65 }}>
               The program has six modules. Where you start depends on where you are. Answer straight and we&apos;ll tell you which module fits your situation right now.
@@ -421,7 +421,7 @@ export default function Home() {
           <Reveal>
             <p style={{ color: '#D8AB69', fontSize: 10, fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: 16 }}>For Parents</p>
             <h2 style={{ color: '#0F1B1F', fontSize: 'clamp(26px, 4vw, 44px)', fontWeight: 300, letterSpacing: '-0.02em', lineHeight: 1.2, marginBottom: 40 }}>
-              Naming what your child is going through.
+              What your child is going through.
             </h2>
           </Reveal>
 
@@ -450,7 +450,7 @@ export default function Home() {
                 </div>
 
                 <p style={{ color: 'rgba(15,27,31,0.5)', fontSize: 13, lineHeight: 1.65 }}>
-                  If your child uses the journal to express something serious like distress, abuse, or self-harm, the app responds with warmth and offers to connect them with someone on their board or a crisis line. You won&apos;t receive notifications about their journal. What they write stays theirs. The safety net works alongside them.
+                  If your child uses the journal to express something serious like distress, abuse, or self-harm, the app responds with warmth and offers to connect them with someone on their board or a crisis line. You won&apos;t get notifications about their journal. What they write stays theirs. The safety net works alongside them.
                 </p>
               </div>
             </Reveal>
@@ -463,7 +463,7 @@ export default function Home() {
                     { item: 'A written mission statement', note: 'theirs alone' },
                     { item: 'A map of their six capitals', note: 'what they have and what needs care' },
                     { item: 'A real advisory board', note: 'people who tell them the truth' },
-                    { item: 'Language for what they\'re living with', note: 'named clearly' },
+                    { item: 'Language for what they\'re living with', note: 'in plain words' },
                     { item: 'Digital self-awareness', note: 'who shapes their identity online' },
                     { item: 'A model for community', note: 'a way to lean on others well' },
                     { item: 'Crisis support, always one tap away', note: 'works without you needing to know first' },
@@ -528,7 +528,7 @@ export default function Home() {
                     { item: 'A real board of trusted people', note: 'sponsor, mentor, therapist, closest friend' },
                     { item: 'A daily ritual you actually run', note: 'morning open, evening close' },
                     { item: 'A structured way to make decisions', note: 'instead of looping at 2 a.m.' },
-                    { item: 'Language for what you\'re living with', note: 'named clearly, not buried' },
+                    { item: 'Language for what you\'re living with', note: 'in plain words' },
                     { item: 'A model for re-building community', note: 'a way to lean on others well' },
                     { item: 'Crisis support, always one tap away', note: 'on-device, no reports out' },
                   ].map(({ item, note }) => (

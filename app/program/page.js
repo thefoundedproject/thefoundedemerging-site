@@ -40,7 +40,7 @@ export default function ProgramPage() {
         <div style={{ backgroundColor: '#0F1B1F' }} className="rounded-lg p-6 mb-12">
           <p style={{ color: '#D8AB69' }} className="text-xs font-bold uppercase tracking-widest mb-2">Status</p>
           <p style={{ color: '#F5F0E8' }} className="text-base leading-relaxed">
-            Cohort curriculum is in active design. The first cohort will run after the mobile apps go live. To get notified when applications open,{' '}
+            Cohort curriculum is in active design. Both mobile apps went live on the App Store in September 2026. To get notified when applications open,{' '}
             <a href="/apply" style={{ color: '#D8AB69' }} className="font-bold">submit an early interest form</a>{' '}or email{' '}
             <a href="mailto:contact@thefoundedemerging.app" style={{ color: '#D8AB69' }}>contact@thefoundedemerging.app</a>.
           </p>
@@ -68,7 +68,7 @@ export default function ProgramPage() {
 
         <Section title="Module 1: the entry">
           <p>
-            The first module begins with a structured intake: three questions, an honest look, a written profile. The work that follows is built on what you bring. There&apos;s no &quot;right&quot; place to start. The intake meets you where you actually are.
+            The first module begins with a structured intake: three questions, a look at where you stand, a written profile. The work that follows is built on what you bring. There&apos;s no &quot;right&quot; place to start. The intake meets you where you actually are.
           </p>
           <p>
             Module 1 is also the on-ramp for the cohort itself. People who complete the intake get matched with a peer pair. The pair runs the daily check-in across the full six months.
@@ -87,7 +87,7 @@ export default function ProgramPage() {
 
         <Section title="Cost">
           <p>
-            Pricing is under development. The cohort will be priced to be reachable. Institutional partnerships have separate pricing — reach out about your context and we&apos;ll talk.
+            Pricing is under development. The cohort will be priced to be reachable. Institutional partnerships have separate pricing. Reach out about your context and we&apos;ll talk.
           </p>
         </Section>
 
@@ -99,7 +99,7 @@ export default function ProgramPage() {
         </Section>
 
         <p style={{ color: 'rgba(15,27,31,0.5)' }} className="text-sm italic mt-12">
-          Dr. Stephen Thompson<br />
+          Stephen Thompson<br />
           The Founded Project
         </p>
       </article>
